@@ -2,6 +2,9 @@
 /*
 !/.gitignore
 !/README.md
+!/index.html
+!/.nojekyll
+!/scripts/
 !/animation-library/
 /animation-library/*
 !/animation-library/index.html

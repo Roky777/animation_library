@@ -2,13 +2,19 @@
 
 A standalone browser library with **29 Sparky animations**, looping gallery previews, a dark animation studio and game-ready exports.
 
-## Run
+## Open the app
+
+**[Launch Sparky Animation Library](https://roky777.github.io/animation_library/)**
+
+The GitHub repository URL displays source code. The link above opens the running app.
+
+## Run locally
 
 ```sh
 python3 -m http.server 8000
 ```
 
-Open **http://localhost:8000/animation-library/index.html**.
+Open **http://localhost:8000/**. The root entry page takes you to the library.
 
 No build step, API key, external service or package installation is required. Serve the files over HTTP rather than opening the HTML directly.
 
@@ -42,6 +48,8 @@ Atlases are losslessly deduplicated. For playback exposure `i`, use `frameMap[i]
 ## Repository contents
 
 ```text
+index.html                   Website entry (opens the library)
+.nojekyll                    Preserve static assets on GitHub Pages
 animation-library/
   index.html                 Gallery and pack export
   demo.html                  Animation studio
@@ -59,3 +67,11 @@ animation-library/
 This repository contains only the Sparky library and its active resources. Lucas rigs, original sprite experiments and local authoring archives are excluded.
 
 Read [app instructions](animation-library/APP_README.md), [per-animation guides](animation-library/README.md), [optimization notes](animation-library/OPTIMIZATION.md) and [quality review](animation-library/QUALITY_REVIEW.md). Technical validation does not certify artistic quality.
+
+## Validate a fresh checkout
+
+```sh
+node scripts/check-library.mjs
+```
+
+This dependency-free check validates the root entry, relative app resources, all29 clip files, PNG dimensions, frame maps and durations.

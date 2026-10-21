@@ -42,7 +42,7 @@ async function packageFiles(){
  files.push({name:'sparky-animations/player.js',data:await (await checkedFetch('player.js')).arrayBuffer()});
  for(let i=0;i<chosen.length;i++){
   const e=chosen[i];$('status').textContent=`Preparing ${i+1} of ${chosen.length}: ${title(e.name)}…`;
-  const d=await (await checkedFetch(e.metadata)).json();const base=`animations/${e.id}/`,sheetURL=new URL(d.sheet,new URL(e.metadata,location.href));
+  const d=await (await checkedFetch(e.metadata)).json();const base=`animations/${e.id}/`,sheetURL=new URL(d.sheet,new URL(e.metadata,document.baseURI));
   if(new URL(d.sheet,'https://pack.local/').origin!=='https://pack.local'||d.sheet.includes('..')||d.sheet.includes('/'))throw Error('Invalid sprite filename');
   files.push({name:`sparky-animations/${base}${d.sheet}`,data:await (await checkedFetch(sheetURL)).arrayBuffer()},{name:`sparky-animations/${base}animation.json`,data:JSON.stringify({...d,source:base+d.sheet},null,2)+'\n'},{name:`sparky-animations/${base}animation.md`,data:clipGuide(e,d)});
   manifest.animations.push({id:e.id,name:e.name,metadata:base+'animation.json',sheet:base+d.sheet,guide:base+'animation.md'});
