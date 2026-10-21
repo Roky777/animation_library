@@ -30,33 +30,33 @@ http://127.0.0.1:4173/animation-library/demo.html
 
 | # | Original Lucas clip | Frames | Duration | Playback | Guide |
 | --- | --- | --- | --- | --- | --- |
-| 01 | `Idle` | 60 | 2.4s | Loop | [Use this clip](animations/01-idle/animation.md) |
-| 02 | `Idle_EB` | 85 | 3.4s | Loop | [Use this clip](animations/02-idle-eb/animation.md) |
-| 03 | `Intro/Lucas_Room_Touch/Lu_Wondering` | 17 | 1.535s | Once, hold ending | [Use this clip](animations/03-intro-lucas-room-touch-lu-wondering/animation.md) |
-| 04 | `Room_Game/Lu_N_Look_Left` | 10 | 2.2s | Loop | [Use this clip](animations/04-room-game-lu-n-look-left/animation.md) |
-| 05 | `Room_Game/Lu_N_Look_Right` | 22 | 2.13s | Loop | [Use this clip](animations/05-room-game-lu-n-look-right/animation.md) |
-| 06 | `Common/Walk/Lu_Walk_Left` | 8 | 1.0s | Loop | [Use this clip](animations/06-common-walk-lu-walk-left/animation.md) |
-| 07 | `Common/Walk/Lu_Walk_Right` | 8 | 1.0s | Loop | [Use this clip](animations/07-common-walk-lu-walk-right/animation.md) |
-| 08 | `Common/Happy_Walk/Lu_Happy_Walk_Left` | 8 | 1.0s | Loop | [Use this clip](animations/08-common-happy-walk-lu-happy-walk-left/animation.md) |
-| 09 | `Common/Happy_Walk/Lu_Happy_Walk_Right` | 8 | 1.0s | Loop | [Use this clip](animations/09-common-happy-walk-lu-happy-walk-right/animation.md) |
-| 10 | `Running_Animation` | 8 | 0.64s | Loop | [Use this clip](animations/10-running-animation/animation.md) |
-| 11 | `Toy_Garden/Happy_Jumping` | 8 | 1.22s | Once, hold ending | [Use this clip](animations/11-toy-garden-happy-jumping/animation.md) |
-| 12 | `Smiling` | 8 | 1.76s | Once, hold ending | [Use this clip](animations/12-smiling/animation.md) |
-| 13 | `Wow` | 17 | 1.325s | Once, hold ending | [Use this clip](animations/13-wow/animation.md) |
-| 14 | `N2/Lu_Laugh_03_Tummy_Hand` | 8 | 0.49s | Loop | [Use this clip](animations/14-n2-lu-laugh-03-tummy-hand/animation.md) |
-| 15 | `Lu_Brave` | 9 | 1.305s | Once, hold ending | [Use this clip](animations/15-lu-brave/animation.md) |
-| 16 | `Entry_Thumbs_Up` | 9 | 1.305s | Once, hold ending | [Use this clip](animations/16-entry-thumbs-up/animation.md) |
-| 17 | `Clapping` | 16 | 0.64s | Loop | [Use this clip](animations/17-clapping/animation.md) |
-| 18 | `Front_Hi` | 21 | 2.245s | Once, hold ending | [Use this clip](animations/18-front-hi/animation.md) |
-| 19 | `C_Saying_Yes` | 17 | 1.08s | Once, hold ending | [Use this clip](animations/19-c-saying-yes/animation.md) |
-| 20 | `Saying_No` | 17 | 1.085s | Once, hold ending | [Use this clip](animations/20-saying-no/animation.md) |
-| 21 | `Entry_Pointing` | 8 | 1.17s | Once, hold ending | [Use this clip](animations/21-entry-pointing/animation.md) |
-| 22 | `Lu_Air_Hugs` | 15 | 1.375s | Once, hold ending | [Use this clip](animations/22-lu-air-hugs/animation.md) |
-| 23 | `Toy_Garden/Lu_Seat_Idle` | 70 | 2.8s | Loop | [Use this clip](animations/23-toy-garden-lu-seat-idle/animation.md) |
-| 24 | `Sequence/4/Sleep` | 80 | 3.2s | Loop | [Use this clip](animations/24-sequence-4-sleep/animation.md) |
-| 25 | `Sequence/4/Sleep_Wakeup` | 9 | 1.495s | Once, hold ending | [Use this clip](animations/25-sequence-4-sleep-wakeup/animation.md) |
-| 26 | `Juice Mode/Idle_To_Pick_Glass` | 9 | 1.405s | Once, hold ending | [Use this clip](animations/26-juice-mode-idle-to-pick-glass/animation.md) |
-| 27 | `Cute_Bounce_Dance` | 48 | 1.6s | Loop | [Use this clip](animations/27-intro-dance-lu-dance-hipmove/animation.md) |
+| 01 | `Idle` | 31 stored poses | 2.4s | Loop | [Use this clip](animations/01-idle/animation.md) |
+| 02 | `Idle_EB` | 49 stored poses | 3.4s | Loop | [Use this clip](animations/02-idle-eb/animation.md) |
+| 03 | `Intro/Lucas_Room_Touch/Lu_Wondering` | 9 stored poses | 1.535s | Once, hold ending | [Use this clip](animations/03-intro-lucas-room-touch-lu-wondering/animation.md) |
+| 04 | `Room_Game/Lu_N_Look_Left` | 6 stored poses | 2.2s | Loop | [Use this clip](animations/04-room-game-lu-n-look-left/animation.md) |
+| 05 | `Room_Game/Lu_N_Look_Right` | 12 stored poses | 2.13s | Loop | [Use this clip](animations/05-room-game-lu-n-look-right/animation.md) |
+| 06 | `Common/Walk/Lu_Walk_Left` | 8 stored poses | 1s | Loop | [Use this clip](animations/06-common-walk-lu-walk-left/animation.md) |
+| 07 | `Common/Walk/Lu_Walk_Right` | 8 stored poses | 1s | Loop | [Use this clip](animations/07-common-walk-lu-walk-right/animation.md) |
+| 08 | `Common/Happy_Walk/Lu_Happy_Walk_Left` | 8 stored poses | 1s | Loop | [Use this clip](animations/08-common-happy-walk-lu-happy-walk-left/animation.md) |
+| 09 | `Common/Happy_Walk/Lu_Happy_Walk_Right` | 8 stored poses | 1s | Loop | [Use this clip](animations/09-common-happy-walk-lu-happy-walk-right/animation.md) |
+| 10 | `Running_Animation` | 8 stored poses | 0.64s | Loop | [Use this clip](animations/10-running-animation/animation.md) |
+| 11 | `Toy_Garden/Happy_Jumping` | 8 stored poses | 1.22s | Once, hold ending | [Use this clip](animations/11-toy-garden-happy-jumping/animation.md) |
+| 12 | `Smiling` | 8 stored poses | 1.76s | Once, hold ending | [Use this clip](animations/12-smiling/animation.md) |
+| 13 | `Wow` | 9 stored poses | 1.325s | Once, hold ending | [Use this clip](animations/13-wow/animation.md) |
+| 14 | `N2/Lu_Laugh_03_Tummy_Hand` | 5 stored poses | 0.49s | Loop | [Use this clip](animations/14-n2-lu-laugh-03-tummy-hand/animation.md) |
+| 15 | `Lu_Brave` | 9 stored poses | 1.305s | Once, hold ending | [Use this clip](animations/15-lu-brave/animation.md) |
+| 16 | `Entry_Thumbs_Up` | 9 stored poses | 1.305s | Once, hold ending | [Use this clip](animations/16-entry-thumbs-up/animation.md) |
+| 17 | `Clapping` | 9 stored poses | 0.64s | Loop | [Use this clip](animations/17-clapping/animation.md) |
+| 18 | `Front_Hi` | 10 stored poses | 2.245s | Once, hold ending | [Use this clip](animations/18-front-hi/animation.md) |
+| 19 | `C_Saying_Yes` | 9 stored poses | 1.08s | Once, hold ending | [Use this clip](animations/19-c-saying-yes/animation.md) |
+| 20 | `Saying_No` | 9 stored poses | 1.085s | Once, hold ending | [Use this clip](animations/20-saying-no/animation.md) |
+| 21 | `Entry_Pointing` | 8 stored poses | 1.17s | Once, hold ending | [Use this clip](animations/21-entry-pointing/animation.md) |
+| 22 | `Lu_Air_Hugs` | 8 stored poses | 1.375s | Once, hold ending | [Use this clip](animations/22-lu-air-hugs/animation.md) |
+| 23 | `Toy_Garden/Lu_Seat_Idle` | 36 stored poses | 2.8s | Loop | [Use this clip](animations/23-toy-garden-lu-seat-idle/animation.md) |
+| 24 | `Sequence/4/Sleep` | 41 stored poses | 3.2s | Loop | [Use this clip](animations/24-sequence-4-sleep/animation.md) |
+| 25 | `Sequence/4/Sleep_Wakeup` | 9 stored poses | 1.495s | Once, hold ending | [Use this clip](animations/25-sequence-4-sleep-wakeup/animation.md) |
+| 26 | `Juice Mode/Idle_To_Pick_Glass` | 9 stored poses | 1.405s | Once, hold ending | [Use this clip](animations/26-juice-mode-idle-to-pick-glass/animation.md) |
+| 27 | `Cute_Bounce_Dance` | 47 stored poses | 1.6s | Loop | [Use this clip](animations/27-intro-dance-lu-dance-hipmove/animation.md) |
 
 ## Shared registration and size
 
@@ -198,7 +198,7 @@ Optimized sheets use `frameMap`: never assume playback frame i is physical cell 
 
 ### Party whistle
 
-| 28 | `Blowing_Whistle` | 24 stored poses | 1.6s | Loop | [Use this clip](animations/28-blowing-whistle/animation.md) |
+| 28 | `Blowing_Whistle` | 46 stored poses | 2s | Loop | [Use this clip](animations/28-blowing-whistle/animation.md) |
 
 Find it under Celebrations in the library. A rainbow paper blower extends and retracts while Sparky holds it to his lips. Includes PNG, timing, frame map and integration guide. This is a visual animation; no sound file is bundled.
 

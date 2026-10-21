@@ -1,25 +1,19 @@
 {
   "lossless": true,
-  "originalFrames": 48,
-  "playbackFrames": 45,
-  "storedFrames": 24,
-  "originalGridCells": 48,
-  "gridCells": 24,
-  "originalBytes": 1388117,
-  "bytes": 711974,
+  "originalFrames": 60,
+  "playbackFrames": 47,
+  "storedFrames": 46,
+  "originalGridCells": 64,
+  "gridCells": 48,
+  "originalBytes": 1752570,
+  "bytes": 1111820,
   "originalFile": "scale-v6/spritesheet.png",
   "originalIndices": [
     [
       0,
-      1
-    ],
-    [
-      2
-    ],
-    [
-      3
-    ],
-    [
+      1,
+      2,
+      3,
       4
     ],
     [
@@ -77,8 +71,12 @@
       22
     ],
     [
-      23,
-      24,
+      23
+    ],
+    [
+      24
+    ],
+    [
       25
     ],
     [
@@ -91,27 +89,13 @@
       28
     ],
     [
-      29
-    ],
-    [
-      30
-    ],
-    [
-      31
-    ],
-    [
-      32
-    ],
-    [
-      33
-    ],
-    [
-      34
-    ],
-    [
-      35
-    ],
-    [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
       36
     ],
     [
@@ -146,6 +130,38 @@
     ],
     [
       47
+    ],
+    [
+      48
+    ],
+    [
+      49
+    ],
+    [
+      50
+    ],
+    [
+      51
+    ],
+    [
+      52
+    ],
+    [
+      53
+    ],
+    [
+      54
+    ],
+    [
+      55
+    ],
+    [
+      56
+    ],
+    [
+      57,
+      58,
+      59
     ]
   ]
 }

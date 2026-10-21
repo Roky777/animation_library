@@ -44,3 +44,6 @@ Cute_Bounce_Dance replaces the hip-sway variant. Source: `cute-bounce-v1/`; test
 
 
 [Hip Dance](demo.html?animation=29-hip-dance) is restored alongside Cute Bounce Dance. The restored clip passes atlas pixel/timing parity, common-scale, runtime playback and resource checks; it retains its original artistic-review status.
+
+
+Bounce/whistle polish revision2: alternating hand bops with a rigid-head bounce; party paper unrolls without stripe compression and has an eased hold/recoil. Pixel, contact, scale and timing checks pass; live browser review was unavailable.

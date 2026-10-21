@@ -14,22 +14,36 @@ const ROOT=path.resolve(__dirname,'..'),dir=ROOT+'/animation/sparky/improved/28-
  if(t<top+head.b*scale-80)throw Error('Prop separation includes character artwork');
  const base=Buffer.from(canonical);for(let y=0;y<H;y++)base.fill(0,(y*W+cut)*4,(y*W+W)*4);
  const bodyWidth=tipStart-cut,tipWidth=r-tipStart+1,height=b-t+1;
- const sourcePNG=await sharp(canonical,{raw:{width:W,height:H,channels:4}}).png().toBuffer();
- const tube=await sharp(sourcePNG).extract({left:cut,top:t,width:bodyWidth,height}).png().toBuffer(),tip=await sharp(sourcePNG).extract({left:tipStart,top:t,width:tipWidth,height}).png().toBuffer();
- const columns=8,rows=6,count=48,sheet=Buffer.alloc(W*columns*H*rows*4),lengths=[],holdsMs=[];
+ const columns=8,rows=8,count=60,sheet=Buffer.alloc(W*columns*H*rows*4),lengths=[],holdsMs=[];
  fs.mkdirSync(out+'/frames',{recursive:true});
  await sharp(base,{raw:{width:W,height:H,channels:4}}).png().toFile(out+'/character-fixed.png');
+ const ease=t=>{t=Math.max(0,Math.min(1,t));return t*t*t*(t*(t*6-15)+10);};
  for(let i=0;i<count;i++){
-  const phase=(1-Math.cos(2*Math.PI*i/count))/2,length=Math.round(5+(bodyWidth-5)*phase);lengths.push(length);holdsMs.push(Math.round((i+1)*1000/30)-Math.round(i*1000/30));
-  const strip=await sharp(tube).resize(length,height,{kernel:'lanczos3'}).png().toBuffer();
-  const raw=await sharp(base,{raw:{width:W,height:H,channels:4}}).composite([{input:strip,left:cut,top:t},{input:tip,left:cut+length,top:t}]).raw().toBuffer();
+  const time=i/count,extension=time<.08?0:time<.48?ease((time-.08)/.4):time<.60?1:time<.94?1-ease((time-.60)/.34):0;
+  const length=5+(bodyWidth-5)*extension;lengths.push(length);holdsMs.push(Math.round((i+1)*1000/30)-Math.round(i*1000/30));
+  const raw=Buffer.from(base);
+  // Reveal the original paper instead of squeezing its stripe artwork.
+  // The curled end translates at subpixel precision, keeping its own shape.
+  for(let y=t;y<=b;y++)for(let x=cut;x<W;x++){
+   const boundary=cut+length,bodyCoverage=Math.max(0,Math.min(1,boundary-x)),tipX=Math.max(tipStart,tipStart+x-boundary);
+   let alpha=0,red=0,green=0,blue=0;
+   const accum=(j,weight)=>{if(j<0||j>=canonical.length/4)return;const a=canonical[j*4+3]*weight;alpha+=a;red+=canonical[j*4]*a;green+=canonical[j*4+1]*a;blue+=canonical[j*4+2]*a;};
+   if(bodyCoverage>0)accum(y*W+x,bodyCoverage);
+   if(tipX>=tipStart-1&&tipX<=r+1){
+    const xx=Math.floor(tipX),f=tipX-xx,coverage=1-bodyCoverage;
+    if(xx>=tipStart&&xx<=r)accum(y*W+xx,(1-f)*coverage);
+    if(xx+1>=tipStart&&xx+1<=r)accum(y*W+xx+1,f*coverage);
+   }
+   const p=(y*W+x)*4;
+   if(alpha>0){raw[p]=Math.round(red/alpha);raw[p+1]=Math.round(green/alpha);raw[p+2]=Math.round(blue/alpha);raw[p+3]=Math.min(255,Math.round(alpha));}
+  }
   // Restore exact original character pixels; resampling affects the prop only.
   for(let y=0;y<H;y++)base.copy(raw,y*W*4,y*W*4,(y*W+cut)*4);
   await sharp(raw,{raw:{width:W,height:H,channels:4}}).png().toFile(out+`/frames/frame-${String(i+1).padStart(3,'0')}.png`);
   for(let y=0;y<H;y++)raw.copy(sheet,((Math.floor(i/columns)*H+y)*columns*W+i%columns*W)*4,y*W*4,(y+1)*W*4);
  }
  await sharp(sheet,{raw:{width:W*columns,height:H*rows,channels:4}}).png().toFile(out+'/spritesheet.png');
- const d={clip:'Blowing_Whistle',file:'whistle-v1/spritesheet.png',frameDir:'whistle-v1/frames',exportPipeline:'whistle-v1',columns,rows,cellWidth:W,cellHeight:H,root:[256,592],frameCount:count,holdsMs,durationMs:1600,loop:true,fixedHead:true,fixedBody:true,description:'Sparky blows a rainbow party whistle: the paper tube extends, holds its curled tip, and retracts in a repeating cycle.',prop:{type:'party-blower',cutX:cut,top:t,height,tipWidth,lengths,sourceScale:scale},method:'One intact generated Sparky blowing pose. Character, mouthpiece, grip, clothes and feet are byte-identical throughout. Only the paper tube beyond the glove changes length; its curled tip retains its original size. A cosine extension/retraction cycle is rendered at 30 fps, then exact duplicate cells are deduplicated for export. No audio is bundled. The character model is scaled once and normalized to the library reference before publishing.',review:{status:'new_party_whistle_review',artisticApproval:false}};
+ const d={clip:'Blowing_Whistle',file:'whistle-v1/spritesheet.png',frameDir:'whistle-v1/frames',exportPipeline:'whistle-v1',columns,rows,cellWidth:W,cellHeight:H,root:[256,592],frameCount:count,holdsMs,durationMs:2000,loop:true,fixedHead:true,fixedBody:true,description:'Sparky blows a rainbow party whistle: the paper tube extends, holds its curled tip, and retracts in a repeating cycle.',prop:{type:'party-blower',cutX:cut,top:t,height,tipWidth,lengths,sourceScale:scale,motionRevision:2,striping:"unscaled reveal",cycle:"rest, eased extension, hold, eased recoil, rest"},method:'One intact generated Sparky blowing pose. Character, mouthpiece, grip, clothes and feet are byte-identical throughout. Only the paper tube beyond the glove changes length; its curled tip retains its original size. An eased unroll, short fully-open hold and smooth recoil are rendered at 30 fps. Paper stripes are revealed at original width, and the curled tip moves at subpixel precision instead of integer steps. The 2000 ms cycle is losslessly deduplicated for export. No audio is bundled. The character model is scaled once and normalized to the library reference before publishing.',review:{status:'new_party_whistle_review',artisticApproval:false}};
  fs.writeFileSync(dir+'/animation-whistle-v1.json',JSON.stringify(d,null,2)+'\n');
  if(!fs.existsSync(dir+'/animation-scale-v6.json'))fs.writeFileSync(dir+'/animation.json',JSON.stringify(d,null,2)+'\n');
  fs.writeFileSync(out+'/README.md','# Blowing_Whistle\n\n'+d.method+'\n\nOriginal: `sources/character.png`. Exact request: `prompt.json`. Rebuild: `node tools/build-whistle-v1.cjs`, normalize: `node tools/normalize-library-scale.cjs --refresh-source --only=28-blowing-whistle`, publish: `node tools/build-sparky-library.cjs 28-blowing-whistle`.\n');

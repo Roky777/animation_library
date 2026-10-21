@@ -146,3 +146,12 @@ Replaced the rejected hands-on-hips hip sway with a new complete happy mascot po
 ## Hip Dance restored as a separate clip
 
 At the user’s request, restored the earlier continuous hands-on-hips sway under `29-hip-dance` / `Hip_Dance`. Cute_Bounce_Dance remains active at its existing ID. The restored clip uses the preserved dance-v9 artwork and motion, common scale normalization, fixed shoe contacts and lossless deduplicated export. There is no added runtime breathing deformation. Both entries are independently selectable in the Dance collection.
+
+
+## Bounce and party-whistle motion polish
+
+Cute Bounce Dance now rises6 source pixels with small alternating1.5px vertical hand bops, replacing the earlier shared horizontal hand drift. One continuous inverse map preserves clothing/limb joins, a rigid head and byte-identical shoe rows. No additional runtime breathing is applied. The two-beat1600ms cycle is still30fps.
+
+Blowing Whistle now reveals paper at its original stripe width; the previous horizontally squeezed strip is removed. The curled tip translates at fractional-pixel positions. A2000ms cycle includes a short rest, eased extension, fully-open hold and eased recoil. Character, grip and mouthpiece remain byte-identical. Tests compare revealed stripe pixels with the fully open source to prevent stripe compression, and check joined anatomy, fixed contacts, loop continuity and source/export parity.
+
+Technical and source-image inspection passed. Live browser inspection was unavailable during this revision, so this update is not marked artistically approved.

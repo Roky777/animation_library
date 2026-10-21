@@ -14,16 +14,16 @@ A cute little two-beat bounce: happy smile, raised fists, soft knees and tiny ha
 
 | Setting | Value |
 | --- | --- |
-| Sheet | 3072 × 3200 RGBA PNG |
+| Sheet | 4096 × 3840 RGBA PNG |
 | Cell | 512 × 640 px |
-| Grid | 6 columns × 5 rows |
+| Grid | 8 columns × 6 rows |
 | Frames | 48 |
 | Duration | 1600 ms |
 | Loop | true |
 | Ground/root | (256, 592) |
 | Reference scale | 400 px standing height |
 
-The atlas stores 26 unique cells. The playback timeline has 48 exposures. For exposure i, use cell = frameMap[i], then crop x=(cell%columns)*cellWidth, y=Math.floor(cell/columns)*cellHeight. Repeated poses reuse the same stored cell. Do not play the physical atlas cells in order. Use the shared root and scale across animations; do not resize each changing pose separately. Seated/lying poses are naturally shorter; jump flight must stay above the floor.
+The atlas stores 47 unique cells. The playback timeline has 48 exposures. For exposure i, use cell = frameMap[i], then crop x=(cell%columns)*cellWidth, y=Math.floor(cell/columns)*cellHeight. Repeated poses reuse the same stored cell. Do not play the physical atlas cells in order. Use the shared root and scale across animations; do not resize each changing pose separately. Seated/lying poses are naturally shorter; jump flight must stay above the floor.
 
 ## Timing
 
@@ -52,7 +52,7 @@ Put this HTML inside `animation-library/` and serve it over HTTP:
 </script>
 ```
 
-In another engine, map exposure i to cell=frameMap[i], then crop at `x=(cell%6)*512`, `y=Math.floor(cell/6)*640`, width512, height640; advance by `frameDurationsMs[i]`.
+In another engine, map exposure i to cell=frameMap[i], then crop at `x=(cell%8)*512`, `y=Math.floor(cell/8)*640`, width512, height640; advance by `frameDurationsMs[i]`.
 
 ## Breathing
 

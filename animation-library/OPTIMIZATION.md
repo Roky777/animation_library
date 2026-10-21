@@ -30,8 +30,8 @@ Use frameMap[i] to locate each timed exposure in the deduplicated atlas. All dis
 | Sequence/4/Sleep | 80 | 41 | 2.13 MiB | 1.04 MiB |
 | Sequence/4/Sleep_Wakeup | 9 | 9 | 1.17 MiB | 0.98 MiB |
 | Juice Mode/Idle_To_Pick_Glass | 9 | 9 | 1.61 MiB | 1.27 MiB |
-| Cute_Bounce_Dance | 48 | 26 | 4.19 MiB | 2.54 MiB |
-| Blowing_Whistle | 48 | 24 | 1.32 MiB | 0.68 MiB |
+| Cute_Bounce_Dance | 48 | 47 | 4.32 MiB | 4.04 MiB |
+| Blowing_Whistle | 60 | 46 | 1.67 MiB | 1.06 MiB |
 | Hip_Dance | 48 | 25 | 2.67 MiB | 1.51 MiB |
 
-Total: 699 original exposures → 418 stored poses. PNGs: 63.4 → 36.1 MiB.
+Total: 711 original exposures → 461 stored poses. PNGs: 63.9 → 38.0 MiB.

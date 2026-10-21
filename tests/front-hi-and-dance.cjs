@@ -33,7 +33,7 @@ function strip(a,y){return a.subarray(y*W*4);}
    assert(original.every(a=>a.subarray(545*W*4).equals(intact.subarray(545*W*4))),'Bounce slides its shoes');
    const heads=original.map(a=>headPart(a,W,H).head),tops=heads.map(h=>h.t),widths=heads.map(h=>h.r-h.l+1);
    assert(Math.max(...widths)-Math.min(...widths)<=2,'Head scales during bounce');
-   assert(Math.max(...tops)-Math.min(...tops)>=4&&Math.max(...tops)-Math.min(...tops)<=6,'Bounce rise missing or excessive');
+   assert(Math.max(...tops)-Math.min(...tops)>=4&&Math.max(...tops)-Math.min(...tops)<=7,'Bounce rise missing or excessive');
    assert(Math.abs(tops[0]-tops[24])<=1&&Math.abs(tops[12]-tops[36])<=1,'Two beats do not match');
    assert(!original[12].equals(intact),'Bounce is static');
    const diffs=original.map((a,i)=>{const b=original[(i+1)%original.length];let n=0;for(let j=3;j<a.length;j+=4)n+=Math.abs(a[j]-b[j]);return n/(W*H);});

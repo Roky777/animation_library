@@ -5,16 +5,23 @@ const {headPart}=require('./sparky-parts.cjs');
 const ROOT=path.resolve(__dirname,'..'),dir=ROOT+'/animation/sparky/improved/27-intro-dance-lu-dance-hipmove',out=dir+'/cute-bounce-v1',W=512,H=640;
 const smooth=t=>(1-Math.cos(Math.PI*Math.max(0,Math.min(1,t))))/2;
 function render(raw,phase){
- const result=Buffer.alloc(raw.length),rise=5*(1-Math.cos(phase*2))/2;
- // A rigid head/upper pose rises as a unit. Knees absorb the motion; shoes stay fixed.
+ const result=Buffer.alloc(raw.length),rise=6*(1-Math.cos(phase*2))/2;
  const lift=y=>y<=480?rise:y>=545?0:rise*(1-smooth((y-480)/65));
+ function arm(x,y){
+  const band=smooth((y-390)/15)*(1-smooth((y-465)/15));
+  return {band,left:1-smooth((x-212)/22),right:smooth((x-278)/22)};
+ }
  for(let y=0;y<H;y++){
-  let sy=y;for(let k=0;k<5;k++)sy=y+lift(sy);
   for(let x=0;x<W;x++){
-   const armBand=smooth((sy-390)/15)*(1-smooth((sy-465)/15));
-   const leftWeight=1-smooth((x-212)/22),rightWeight=smooth((x-278)/22);
-   const side=Math.sin(phase),dx=2*side*armBand*(leftWeight+rightWeight);
-   const sx=x-dx,x0=Math.floor(sx),y0=Math.floor(sy),fx=sx-x0,fy=sy-y0,p=(y*W+x)*4;
+   // Invert one continuous displacement field. Head moves rigidly; hands
+   // alternate small up/down bops; all transitions taper into intact sleeves.
+   let sy=y,sx=x;
+   for(let k=0;k<6;k++){
+    const g=arm(sx,sy),handY=1.5*Math.sin(phase)*g.band*(g.left-g.right);
+    sy=y+lift(sy)+handY;
+    sx=x-.7*Math.sin(phase*2)*g.band*(g.left+g.right);
+   }
+   const x0=Math.floor(sx),y0=Math.floor(sy),fx=sx-x0,fy=sy-y0,p=(y*W+x)*4;
    let a=0,r=0,g=0,b=0;
    for(let dy=0;dy<2;dy++)for(let xx=0;xx<2;xx++){
     const px=x0+xx,py=y0+dy;if(px<0||px>=W||py<0||py>=H)continue;
@@ -40,7 +47,7 @@ function render(raw,phase){
   for(let y=0;y<H;y++)frame.copy(sheet,((Math.floor(i/columns)*H+y)*columns*W+i%columns*W)*4,y*W*4,(y+1)*W*4);
  }
  await sharp(sheet,{raw:{width:W*columns,height:H*rows,channels:4}}).png().toFile(out+'/spritesheet.png');
- const d={clip:'Cute_Bounce_Dance',file:'cute-bounce-v1/spritesheet.png',frameDir:'cute-bounce-v1/frames',exportPipeline:'cute-bounce-v1',columns,rows,cellWidth:W,cellHeight:H,root:[256,592],frameCount:count,sourceFrameCount:1,holdsMs,durationMs:1600,loop:true,wholeFigure:true,fixedHead:false,fixedUpperBody:false,renderedMotion:{fps:30,type:'cute-bounce',risePx:5,handBopPx:2,fixedShoeRows:[545,639],canonical:'cute-bounce-v1/canonical.png'},description:'A cute little two-beat bounce: happy smile, raised fists, soft knees and tiny hand bops.',method:'Replaces the rejected hands-on-hips dance. One intact character drawing provides a rigid head and complete clothing/limb joins. A smooth five-pixel upper-body rise eases into unchanged shoe contacts; tiny two-pixel hand bops use a continuous spatial mapping, without cutout joints, crossfades or model-size changes. The full head translates without stretching. Forty-eight rendered frames at30fps form two gentle beats over1600ms; duplicate poses share atlas cells. Older hip-sway source folders are archived/inactive. This is a simple planted bounce, not a stepping or hip-sway routine.',review:{status:'cute_bounce_review',artisticApproval:false}};
+ const d={clip:'Cute_Bounce_Dance',file:'cute-bounce-v1/spritesheet.png',frameDir:'cute-bounce-v1/frames',exportPipeline:'cute-bounce-v1',columns,rows,cellWidth:W,cellHeight:H,root:[256,592],frameCount:count,sourceFrameCount:1,holdsMs,durationMs:1600,loop:true,wholeFigure:true,fixedHead:false,fixedUpperBody:false,renderedMotion:{fps:30,type:'cute-bounce',risePx:6,handBopPx:1.5,motionRevision:2,fixedShoeRows:[545,639],canonical:'cute-bounce-v1/canonical.png'},description:'A cute little two-beat bounce: happy smile, raised fists, soft knees and tiny hand bops.',method:'A simple bounce dance alongside the separate Hip_Dance. One intact character drawing provides a rigid head and complete clothing/limb joins. A smooth six-pixel upper-body rise eases into unchanged shoe contacts; alternating 1.5-pixel vertical hand bops use a continuous spatial mapping, without cutout joints, crossfades or model-size changes. The full head translates without stretching. Forty-eight rendered frames at30fps form two gentle beats over1600ms; duplicate poses share atlas cells. Hip_Dance remains a separate active clip. This is a simple planted bounce, not a stepping or hip-sway routine.',review:{status:'cute_bounce_review',artisticApproval:false}};
  fs.writeFileSync(dir+'/animation-cute-bounce-v1.json',JSON.stringify(d,null,2)+'\n');
  fs.writeFileSync(out+'/README.md','# Cute_Bounce_Dance\n\n'+d.method+'\n\nSource: `sources/character.png`; exact request: `prompt.json`. Rebuild: `node tools/build-cute-bounce.cjs`, normalize: `node tools/normalize-library-scale.cjs --refresh-source --only=27-intro-dance-lu-dance-hipmove`, publish: `node tools/build-sparky-library.cjs 27-intro-dance-lu-dance-hipmove`. Stable ID is retained for existing game links; visible action name is Cute_Bounce_Dance.\n');
  console.log('Cute_Bounce_Dance: 48 frames, 1600ms, two planted bounce beats.');

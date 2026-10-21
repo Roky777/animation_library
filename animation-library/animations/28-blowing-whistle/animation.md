@@ -14,23 +14,23 @@ Sparky blows a rainbow party whistle: the paper tube extends, holds its curled t
 
 | Setting | Value |
 | --- | --- |
-| Sheet | 3072 × 2560 RGBA PNG |
+| Sheet | 4096 × 3840 RGBA PNG |
 | Cell | 512 × 640 px |
-| Grid | 6 columns × 4 rows |
-| Frames | 45 |
-| Duration | 1600 ms |
+| Grid | 8 columns × 6 rows |
+| Frames | 47 |
+| Duration | 2000 ms |
 | Loop | true |
 | Ground/root | (256, 592) |
 | Reference scale | 400 px standing height |
 
-The atlas stores 24 unique cells. The playback timeline has 45 exposures. For exposure i, use cell = frameMap[i], then crop x=(cell%columns)*cellWidth, y=Math.floor(cell/columns)*cellHeight. Repeated poses reuse the same stored cell. Do not play the physical atlas cells in order. Use the shared root and scale across animations; do not resize each changing pose separately. Seated/lying poses are naturally shorter; jump flight must stay above the floor.
+The atlas stores 46 unique cells. The playback timeline has 47 exposures. For exposure i, use cell = frameMap[i], then crop x=(cell%columns)*cellWidth, y=Math.floor(cell/columns)*cellHeight. Repeated poses reuse the same stored cell. Do not play the physical atlas cells in order. Use the shared root and scale across animations; do not resize each changing pose separately. Seated/lying poses are naturally shorter; jump flight must stay above the floor.
 
 ## Timing
 
 Use these durations in milliseconds for cells in playback order:
 
 ```json
-[67,33,33,34,33,33,34,33,33,34,33,33,34,33,33,34,33,33,34,33,33,34,100,33,33,34,33,33,34,33,33,34,33,33,34,33,33,34,33,33,34,33,33,34,33]
+[167,33,33,34,33,33,34,33,33,34,33,33,34,33,33,34,33,33,34,33,33,34,33,33,34,266,34,33,33,34,33,33,34,33,33,34,33,33,34,33,33,34,33,33,34,33,100]
 ```
 
 Wrap after the final exposure; do not append another duplicated endpoint.
@@ -52,7 +52,7 @@ Put this HTML inside `animation-library/` and serve it over HTTP:
 </script>
 ```
 
-In another engine, map exposure i to cell=frameMap[i], then crop at `x=(cell%6)*512`, `y=Math.floor(cell/6)*640`, width512, height640; advance by `frameDurationsMs[i]`.
+In another engine, map exposure i to cell=frameMap[i], then crop at `x=(cell%8)*512`, `y=Math.floor(cell/8)*640`, width512, height640; advance by `frameDurationsMs[i]`.
 
 ## Breathing
 
