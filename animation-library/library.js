@@ -3,7 +3,7 @@ import {makeZip} from './zip.js';
 const $=id=>document.getElementById(id),selected=new Set(),players=new Map();
 let entries=[],category='All',selectedOnly=false,paused=matchMedia('(prefers-reduced-motion: reduce)').matches,busy=false;
 const groups=['All','Idle & looks','Movement','Expressions','Gestures','Rest & interactions','Dance','Celebrations'];
-const group=id=>{const n=Number(id.slice(0,2));return n<=5?'Idle & looks':n<=11?'Movement':n<=14?'Expressions':n<=22?'Gestures':n<=26?'Rest & interactions':n===27?'Dance':'Celebrations';};
+const group=id=>{const n=Number(id.slice(0,2));return n<=5?'Idle & looks':n<=11?'Movement':n<=14?'Expressions':n<=22?'Gestures':n<=26?'Rest & interactions':[27,29].includes(n)?'Dance':'Celebrations';};
 const title=name=>name.split('/').at(-1).replace(/^Lu_/,'').replace(/_/g,' ').replace(/^N /,'');
 const checkedFetch=async url=>{const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw Error(`Could not load ${url} (${r.status})`);return r;};
 function visible(){const q=$('search').value.toLowerCase().trim();return entries.filter(e=>(category==='All'||group(e.id)===category)&&(!selectedOnly||selected.has(e.id))&&`${e.name} ${title(e.name)} ${group(e.id)}`.toLowerCase().includes(q));}

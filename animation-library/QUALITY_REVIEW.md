@@ -41,3 +41,6 @@ Blowing_Whistle was added after the original quality pass. Its fixed grip/body/f
 
 
 Cute_Bounce_Dance replaces the hip-sway variant. Source: `cute-bounce-v1/`; tests check rigid head size, fixed shoe pixels, two matching bounce beats and the loop seam.
+
+
+[Hip Dance](demo.html?animation=29-hip-dance) is restored alongside Cute Bounce Dance. The restored clip passes atlas pixel/timing parity, common-scale, runtime playback and resource checks; it retains its original artistic-review status.

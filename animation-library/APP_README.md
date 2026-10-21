@@ -2,7 +2,7 @@
 
 Start a local HTTP server in this directory (`python3 -m http.server 8000`), then open http://localhost:8000/index.html. No installation, API key, CDN or build step is required.
 
-Browse the 28 animations, filter by collection or name, and select clips using their checkboxes. Gallery previews always repeat; exported metadata preserves each clip's intended loop or one-shot setting. Pause and speed controls affect previews only.
+Browse the 29 animations, filter by collection or name, and select clips using their checkboxes. Gallery previews always repeat; exported metadata preserves each clip's intended loop or one-shot setting. Pause and speed controls affect previews only.
 
 Download ZIP exports only selected animations. Extract its `sparky-animations/` folder into your game's served asset directory. Give the included `AGENT_INSTRUCTIONS.md` to your coding agent. Each clip includes a PNG sheet, JSON timing and its own Markdown guide; the pack also contains the browser player, manifest and preview example.
 

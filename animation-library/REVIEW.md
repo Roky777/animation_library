@@ -141,3 +141,8 @@ New Sparky party-blower loop from one complete generated character drawing. The 
 ## Cute_Bounce_Dance replacement
 
 Replaced the rejected hands-on-hips hip sway with a new complete happy mascot pose: relaxed close stance, softly bent elbows and raised fists. A continuous 5 px vertical bounce gives two gentle beats over1600ms, with small 2 px hand bops. Head proportions stay rigid; shoes remain byte-identical. No separated limb layers or changing frame scale. New source and exact prompt are in `27-intro-dance-lu-dance-hipmove/cute-bounce-v1/`. Old dance artwork is retained only for recovery and is excluded from active exports. The legacy stable ID remains so existing links resolve to the replacement. Pixel, contact, connected-figure, scale, timing and loop tests cover the new output. Artistic approval is still the user’s decision.
+
+
+## Hip Dance restored as a separate clip
+
+At the user’s request, restored the earlier continuous hands-on-hips sway under `29-hip-dance` / `Hip_Dance`. Cute_Bounce_Dance remains active at its existing ID. The restored clip uses the preserved dance-v9 artwork and motion, common scale normalization, fixed shoe contacts and lossless deduplicated export. There is no added runtime breathing deformation. Both entries are independently selectable in the Dance collection.

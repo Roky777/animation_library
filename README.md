@@ -1,6 +1,6 @@
 # Sparky Animation Library
 
-A browser-based library of 28 character animations with looping previews, search, collections, an inspection studio and game-ready ZIP exports.
+A browser-based library of 29 character animations with looping previews, search, collections, an inspection studio and game-ready ZIP exports.
 
 ## Run locally
 

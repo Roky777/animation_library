@@ -197,6 +197,13 @@
       "metadata": "animations/28-blowing-whistle/animation.json",
       "sheet": "animations/28-blowing-whistle/spritesheet-optimized-v1.png",
       "guide": "animations/28-blowing-whistle/animation.md"
+    },
+    {
+      "id": "29-hip-dance",
+      "name": "Hip_Dance",
+      "metadata": "animations/29-hip-dance/animation.json",
+      "sheet": "animations/29-hip-dance/spritesheet-optimized-v1.png",
+      "guide": "animations/29-hip-dance/animation.md"
     }
   ]
 }

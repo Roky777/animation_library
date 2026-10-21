@@ -5,7 +5,7 @@ module.exports=async function breathPolicy(entry,dir,data){
  if([1,2,23,24].includes(n))return {enabled:false,baked:true,reason:'Breathing already exists in these playback cells.'};
  // Keep the rigid glass pedestal intact; this interaction already has active reach/lift motion.
  if(n===26)return {enabled:false,baked:false,reason:'Pickup keeps its prop rigid; no whole-sheet breathing transform.'};
- if(n===27&&data.renderedMotion)return {enabled:false,baked:true,reason:'Dance motion is baked into these cells; no extra runtime transform.'};
+ if([27,29].includes(n)&&data.renderedMotion)return {enabled:false,baked:true,reason:'Dance motion is baked into these cells; no extra runtime transform.'};
  if([6,7,8,9,10,11,14,25].includes(n))return {enabled:false,baked:false,reason:'The action supplies its own body motion; no extra breathing deformation during locomotion, laughter, flight or waking.'};
  if(n===28)return {enabled:false,baked:false,reason:'Whistle prop motion is baked; the grip and mouthpiece remain fixed. No audio is bundled.'};
  const poses=[];

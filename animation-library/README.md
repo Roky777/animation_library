@@ -206,3 +206,11 @@ Find it under Celebrations in the library. A rainbow paper blower extends and re
 ### Cute Bounce Dance
 
 The rejected hands-on-hips dance is replaced by a simple happy two-beat bounce with raised fists and a close stance. [Open the new dance](demo.html?animation=27-intro-dance-lu-dance-hipmove). Its stable asset ID is retained for existing game links; the exported name is `Cute_Bounce_Dance`. Earlier dance drafts are inactive and excluded from ZIPs.
+
+
+### Both dance choices
+
+- [Cute Bounce Dance](demo.html?animation=27-intro-dance-lu-dance-hipmove): little raised-fist bounce.
+- [Hip Dance](demo.html?animation=29-hip-dance): restored hands-on-hips sway.
+
+Both are active, independently selectable and included in ZIP exports.

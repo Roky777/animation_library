@@ -32,5 +32,6 @@ Use frameMap[i] to locate each timed exposure in the deduplicated atlas. All dis
 | Juice Mode/Idle_To_Pick_Glass | 9 | 9 | 1.61 MiB | 1.27 MiB |
 | Cute_Bounce_Dance | 48 | 26 | 4.19 MiB | 2.54 MiB |
 | Blowing_Whistle | 48 | 24 | 1.32 MiB | 0.68 MiB |
+| Hip_Dance | 48 | 25 | 2.67 MiB | 1.51 MiB |
 
-Total: 651 original exposures → 393 stored poses. PNGs: 60.8 → 34.6 MiB.
+Total: 699 original exposures → 418 stored poses. PNGs: 63.4 → 36.1 MiB.
