@@ -1,0 +1,31 @@
+.DS_Store
+**/.DS_Store
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+output/
+tmp/
+.agents/
+.codex/
+.aws/
+
+# Original experiments and generated review sheets stay local.
+/*.png
+unpolished anmations/
+animation/sparky/*
+!animation/sparky/improved/
+animation/sparky/improved/*
+!animation/sparky/improved/manifest.json
+!animation/sparky/improved/*/
+animation/sparky/improved/*/*
+!animation/sparky/improved/*/optimized-v1/
+animation/sparky/improved/*/optimized-v1/*
+!animation/sparky/improved/*/optimized-v1/spritesheet.png
+!animation/sparky/improved/*/optimized-v1/report.json
+
+# Ship only the active atlas, metadata and guide for each portable clip.
+animation-library/animations/*/*.png
+!animation-library/animations/*/spritesheet-optimized-v1.png

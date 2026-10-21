@@ -1,0 +1,43 @@
+{
+  "lossless": true,
+  "originalFrames": 10,
+  "playbackFrames": 10,
+  "storedFrames": 6,
+  "originalGridCells": 10,
+  "gridCells": 6,
+  "originalBytes": 929421,
+  "bytes": 489411,
+  "originalFile": "scale-v6/spritesheet.png",
+  "originalIndices": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ],
+    [
+      8
+    ],
+    [
+      9
+    ]
+  ]
+}

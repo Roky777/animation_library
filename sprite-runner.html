@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sprite Sheet Runner</title>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="sprite-runner.css">
+  <script defer src="sprite-runner.js?v=breathing-v1"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="sprite-runner.html"><span class="brand-mark">S</span><span><strong>Sprite runner</strong><small>Animation workbench</small></span></a>
+    <a class="back-link" href="index.html">Lucas rig viewer ↗</a>
+  </header>
+  <main class="sprite-workspace">
+    <section>
+      <div class="page-heading"><div><p class="eyebrow">SPRITE SHEETS / PREVIEW</p><h1 id="sheet-title">Sparky · Head look</h1></div><span class="asset-count" id="sheet-size"></span></div>
+      <section class="stage-shell">
+        <div class="stage-topline"><span id="playback-state" role="status" aria-live="polite">Loading sheet…</span><span id="frame-readout"></span></div>
+        <div class="sprite-stage" id="sprite-stage"><canvas id="sprite-canvas" width="512" height="640" aria-label="Animated sprite sheet preview"></canvas></div>
+        <div class="sprite-transport">
+          <button class="play-button" id="play" disabled>Pause</button>
+          <button class="icon-button" id="restart" aria-label="Restart animation">Restart</button>
+          <button class="icon-button" id="previous" aria-label="Previous frame">←</button>
+          <button class="icon-button" id="next" aria-label="Next frame">→</button>
+          <label>Speed <select id="speed"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select></label>
+          <label class="sprite-check"><input type="checkbox" id="loop"> Loop</label>
+        </div>
+        <div class="sprite-scrub"><input id="scrub" type="range" min="0" max="3199" value="0" step="1" aria-label="Animation time"><span id="time-readout">0.00 / 3.20s</span></div>
+      </section>
+      <p class="footnote" id="preview-note">Four original head-look keys, registered at the shoe contacts. The turn ends in a held pose; no generated in-betweens.</p>
+      <section class="source-section"><h2>Frames in playback order</h2><div id="frame-strip" class="frame-strip"></div></section>
+    </section>
+    <aside class="inspector sprite-settings">
+      <section class="inspector-section">
+        <div class="section-heading"><span class="section-index">01</span><h2>Sprite sheet</h2></div>
+        <label class="field-label" for="sheet-preset">Saved animation</label>
+        <select class="field-select" id="sheet-preset"><option value="smooth">Sparky · Head look + return (improved)</option><option value="look">Sparky · Original head-look keys</option><option value="blink">Sparky · Blink + breathing</option><option value="idle">Sparky · Idle keys</option><option value="" disabled>Custom sheet</option></select>
+        <p id="collection-status" class="muted-note" role="status">Loading improved collection…</p>
+        <button id="refresh-collection" class="icon-button" type="button">Refresh collection</button>
+        <p id="source-name" class="sprite-filename">Four-key head-look animation sheet.png</p>
+        <label class="upload-button">Open another sheet<input id="upload" type="file" accept="image/png,image/webp,image/jpeg"></label>
+        <p class="muted-note">Choose a local image. Files stay in your browser.</p>
+      </section>
+      <form id="settings" class="inspector-section">
+        <div class="section-heading"><span class="section-index">02</span><h2>Layout and timing</h2></div>
+        <div class="settings-grid">
+          <label>Columns<input id="columns" type="number" min="1" max="64" value="2" required></label>
+          <label>Rows<input id="rows" type="number" min="1" max="64" value="2" required></label>
+          <label>Frame count<input id="count" type="number" min="1" max="512" value="4" required></label>
+          <label>Uniform FPS<input id="fps" type="number" min="0.1" max="120" step="0.1" value="3" required></label>
+        </div>
+        <label class="field-label" for="timing">Frame holds in milliseconds (optional)</label>
+        <input id="timing" type="text" value="600, 140, 220, 1200" placeholder="For example: 100, 100, 200" aria-describedby="timing-help">
+        <p class="muted-note" id="timing-help">One positive duration per frame. Clear to use uniform FPS. Cells play left to right, top to bottom; unused final cells are skipped.</p>
+        <button class="play-button" type="submit">Apply settings</button>
+        <p id="settings-error" role="alert"></p>
+      </form>
+      <section class="inspector-section">
+        <div class="section-heading"><span class="section-index">03</span><h2>Display</h2></div>
+        <label class="sprite-check"><input type="checkbox" id="breathing"> Gentle breathing</label>
+        <label class="field-label" for="breath-strength">Chest lift <span id="breath-value">5 px</span></label>
+        <input id="breath-strength" type="range" min="0" max="10" step="0.5" value="5" style="width:100%;accent-color:var(--teal)">
+        <p class="muted-note">Breathing follows Sparky’s standing anatomy: head moves rigidly, chest lengthens gently, waist and feet stay fixed. Turn it off for other poses or already-animated sheets.</p>
+        <label class="field-label" for="background">Stage background</label>
+        <select class="field-select" id="background"><option value="light">Light</option><option value="dark">Dark</option><option value="checker">Transparency checker</option></select>
+        <label class="sprite-check"><input type="checkbox" id="pixelated"> Crisp pixel-art rendering</label>
+        <p class="muted-note">The source sheet stays unchanged. The head-look preset applies fixed shoe-contact offsets per frame; no per-frame scaling. Other presets use their original cell registration.</p>
+      </section>
+    </aside>
+  </main>
+</body></html>

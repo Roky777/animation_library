@@ -1,0 +1,3153 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "01-idle",
+      "clip": "Idle",
+      "status": "ready",
+      "input": "Sparky_Idle_3_Key_Review.png",
+      "playback": {
+        "assetRevision": "02b4ce0ad4b4",
+        "breathEffect": {
+          "enabled": false,
+          "baked": true,
+          "reason": "Breathing already exists in these playback cells."
+        },
+        "file": "animation/sparky/improved/01-idle/optimized-v1/spritesheet.png",
+        "columns": 7,
+        "rows": 5,
+        "count": 60,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          29,
+          28,
+          27,
+          26,
+          25,
+          24,
+          23,
+          22,
+          21,
+          20,
+          19,
+          18,
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "atlasFrameCount": 31,
+        "holds": [
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "fps": 25,
+        "loop": true,
+        "breathing": false,
+        "offsets": [],
+        "note": "Idle · normalized 512×640 export, 60 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "full",
+      "inputReviewNote": "Use existing root idle reference; no dedicated idle file in the new folder.",
+      "review": {
+        "status": "registration_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/01-idle/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "02-idle-eb",
+      "clip": "Idle_EB",
+      "status": "ready",
+      "input": "unpolished anmations/02_Idle_EB.png",
+      "playback": {
+        "assetRevision": "89fff251f743",
+        "breathEffect": {
+          "enabled": false,
+          "baked": true,
+          "reason": "Breathing already exists in these playback cells."
+        },
+        "file": "animation/sparky/improved/02-idle-eb/optimized-v1/spritesheet.png",
+        "columns": 8,
+        "rows": 7,
+        "count": 84,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          41,
+          40,
+          39,
+          38,
+          37,
+          36,
+          35,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          28,
+          27,
+          26,
+          25,
+          24,
+          23,
+          22,
+          21,
+          20,
+          19,
+          18,
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "atlasFrameCount": 49,
+        "holds": [
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          80,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "fps": 25,
+        "loop": true,
+        "breathing": false,
+        "offsets": [],
+        "note": "Idle_EB · normalized 512×640 export, 84 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "full",
+      "inputReviewNote": "Six keys include breathing and eyelid changes; inspect eye/head stability.",
+      "review": {
+        "status": "registration_review",
+        "artisticApproval": false
+      }
+    },
+    {
+      "id": "03-intro-lucas-room-touch-lu-wondering",
+      "clip": "Intro/Lucas_Room_Touch/Lu_Wondering",
+      "status": "ready",
+      "input": "unpolished anmations/03_Intro_Lucas_Room_Touch_Lu_Wondering.png",
+      "playback": {
+        "assetRevision": "cd66c3b1be2a",
+        "breathEffect": {
+          "enabled": true,
+          "baked": false,
+          "amplitudePx": 1.5,
+          "periodMs": 3600,
+          "poses": [
+            {
+              "upperY": 402,
+              "fixedY": 487
+            },
+            {
+              "upperY": 402,
+              "fixedY": 487
+            },
+            {
+              "upperY": 402,
+              "fixedY": 487
+            },
+            {
+              "upperY": 402,
+              "fixedY": 487
+            },
+            {
+              "upperY": 402,
+              "fixedY": 487
+            },
+            {
+              "upperY": 402,
+              "fixedY": 487
+            },
+            {
+              "upperY": 402,
+              "fixedY": 487
+            },
+            {
+              "upperY": 402,
+              "fixedY": 487
+            },
+            {
+              "upperY": 402,
+              "fixedY": 487
+            },
+            {
+              "upperY": 402,
+              "fixedY": 487
+            },
+            {
+              "upperY": 402,
+              "fixedY": 487
+            },
+            {
+              "upperY": 402,
+              "fixedY": 487
+            },
+            {
+              "upperY": 402,
+              "fixedY": 487
+            },
+            {
+              "upperY": 402,
+              "fixedY": 487
+            },
+            {
+              "upperY": 402,
+              "fixedY": 487
+            },
+            {
+              "upperY": 402,
+              "fixedY": 487
+            },
+            {
+              "upperY": 402,
+              "fixedY": 487
+            }
+          ],
+          "stableBands": true,
+          "method": "One fixed anatomical mapping per stationary clip; subtle rigid upper pose lift, C1 chest extension and unchanged lower contacts. Independent continuous clock across loops and terminal holds. No per-frame band changes."
+        },
+        "file": "animation/sparky/improved/03-intro-lucas-room-touch-lu-wondering/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 3,
+        "count": 17,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "atlasFrameCount": 9,
+        "holds": [
+          185,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55,
+          305,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55,
+          275
+        ],
+        "fps": 18.181818181818183,
+        "loop": false,
+        "breathing": false,
+        "offsets": [],
+        "note": "Intro/Lucas_Room_Touch/Lu_Wondering · normalized 512×640 export, 17 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "full",
+      "inputReviewNote": "Five curious/hand-to-chin poses in a 3 by 2 layout.",
+      "review": {
+        "status": "redraw_review",
+        "artisticApproval": false
+      }
+    },
+    {
+      "id": "04-room-game-lu-n-look-left",
+      "clip": "Room_Game/Lu_N_Look_Left",
+      "status": "ready",
+      "input": "unpolished anmations/04_Room_Game_Lu_N_Look_Left.png",
+      "playback": {
+        "assetRevision": "ed8869cde89b",
+        "breathEffect": {
+          "enabled": true,
+          "baked": false,
+          "amplitudePx": 1.5,
+          "periodMs": 3600,
+          "poses": [
+            {
+              "upperY": 415,
+              "fixedY": 500
+            },
+            {
+              "upperY": 415,
+              "fixedY": 500
+            },
+            {
+              "upperY": 415,
+              "fixedY": 500
+            },
+            {
+              "upperY": 415,
+              "fixedY": 500
+            },
+            {
+              "upperY": 415,
+              "fixedY": 500
+            },
+            {
+              "upperY": 415,
+              "fixedY": 500
+            },
+            {
+              "upperY": 415,
+              "fixedY": 500
+            },
+            {
+              "upperY": 415,
+              "fixedY": 500
+            },
+            {
+              "upperY": 415,
+              "fixedY": 500
+            },
+            {
+              "upperY": 415,
+              "fixedY": 500
+            }
+          ],
+          "stableBands": true,
+          "method": "One fixed anatomical mapping per stationary clip; subtle rigid upper pose lift, C1 chest extension and unchanged lower contacts. Independent continuous clock across loops and terminal holds. No per-frame band changes."
+        },
+        "file": "animation/sparky/improved/04-room-game-lu-n-look-left/optimized-v1/spritesheet.png",
+        "columns": 3,
+        "rows": 2,
+        "count": 10,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "atlasFrameCount": 6,
+        "holds": [
+          600,
+          70,
+          70,
+          70,
+          90,
+          1000,
+          90,
+          70,
+          70,
+          70
+        ],
+        "fps": 14.285714285714286,
+        "loop": true,
+        "breathing": false,
+        "offsets": [],
+        "note": "Room_Game/Lu_N_Look_Left · normalized 512×640 export, 10 frames. Visual review pending."
+      },
+      "mappingNote": "Mapped by visible screen-left head-turn action; exact original Lucas motion was not reconstructed.",
+      "inputAlternatives": [
+        "animation/sparky/source-archive/unpolished-duplicates/Top-right character glances left.png"
+      ],
+      "inputCoverage": "full",
+      "inputReviewNote": "Already improved and approved; retain existing output. Alternate source is available.",
+      "review": {
+        "status": "registration_review",
+        "artisticApproval": false
+      }
+    },
+    {
+      "id": "05-room-game-lu-n-look-right",
+      "clip": "Room_Game/Lu_N_Look_Right",
+      "status": "ready",
+      "input": "unpolished anmations/05_Room_Game_Lu_N_Look_Right.png",
+      "playback": {
+        "assetRevision": "00e7b9b59238",
+        "breathEffect": {
+          "enabled": true,
+          "baked": false,
+          "amplitudePx": 1.5,
+          "periodMs": 3600,
+          "poses": [
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            },
+            {
+              "upperY": 404,
+              "fixedY": 489
+            }
+          ],
+          "stableBands": true,
+          "method": "One fixed anatomical mapping per stationary clip; subtle rigid upper pose lift, C1 chest extension and unchanged lower contacts. Independent continuous clock across loops and terminal holds. No per-frame band changes."
+        },
+        "file": "animation/sparky/improved/05-room-game-lu-n-look-right/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 3,
+        "count": 22,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "atlasFrameCount": 12,
+        "holds": [
+          480,
+          60,
+          40,
+          25,
+          35,
+          40,
+          45,
+          20,
+          55,
+          60,
+          80,
+          730,
+          60,
+          55,
+          20,
+          45,
+          40,
+          35,
+          25,
+          40,
+          60,
+          80
+        ],
+        "fps": 22.22222222222222,
+        "loop": true,
+        "breathing": false,
+        "offsets": [],
+        "note": "Room_Game/Lu_N_Look_Right · normalized 512×640 export, 22 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "full",
+      "inputReviewNote": "Four poses in a 2 by 2 layout; source body is mostly stationary.",
+      "review": {
+        "status": "registration_review",
+        "artisticApproval": false
+      }
+    },
+    {
+      "id": "06-common-walk-lu-walk-left",
+      "clip": "Common/Walk/Lu_Walk_Left",
+      "status": "ready",
+      "input": "unpolished anmations/06_Common_Walk_Lu_Walk_Left.png",
+      "playback": {
+        "assetRevision": "21fe7223794a",
+        "breathEffect": {
+          "enabled": false,
+          "baked": false,
+          "reason": "The action supplies its own body motion; no extra breathing deformation during locomotion, laughter, flight or waking."
+        },
+        "file": "animation/sparky/improved/06-common-walk-lu-walk-left/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 2,
+        "count": 8,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "atlasFrameCount": 8,
+        "holds": [
+          83.33333333333333,
+          166.66666666666666,
+          166.66666666666666,
+          83.33333333333333,
+          83.33333333333333,
+          166.66666666666666,
+          166.66666666666666,
+          83.33333333333333
+        ],
+        "fps": 6,
+        "loop": true,
+        "breathing": false,
+        "offsets": [],
+        "note": "Common/Walk/Lu_Walk_Left · normalized 512×640 export, 8 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "full",
+      "inputReviewNote": "Eight left-facing poses in a 4 by 2 layout; stride contacts and seam need review.",
+      "review": {
+        "status": "user_approved",
+        "artisticApproval": true
+      },
+      "generatedSource": "animation/sparky/improved/06-common-walk-lu-walk-left/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "07-common-walk-lu-walk-right",
+      "clip": "Common/Walk/Lu_Walk_Right",
+      "status": "ready",
+      "input": "unpolished anmations/07_Common_Walk_Lu_Walk_Right.png",
+      "playback": {
+        "assetRevision": "7a455ce092e9",
+        "breathEffect": {
+          "enabled": false,
+          "baked": false,
+          "reason": "The action supplies its own body motion; no extra breathing deformation during locomotion, laughter, flight or waking."
+        },
+        "file": "animation/sparky/improved/07-common-walk-lu-walk-right/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 2,
+        "count": 8,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "atlasFrameCount": 8,
+        "holds": [
+          83.33333333333333,
+          166.66666666666666,
+          166.66666666666666,
+          83.33333333333333,
+          83.33333333333333,
+          166.66666666666666,
+          166.66666666666666,
+          83.33333333333333
+        ],
+        "fps": 6,
+        "loop": true,
+        "breathing": false,
+        "offsets": [],
+        "note": "Common/Walk/Lu_Walk_Right · normalized 512×640 export, 8 frames. Visual review pending."
+      },
+      "inputAlternatives": [
+        "animation/sparky/source-archive/unpolished-duplicates/Opposite-Cycle Walk Key Sheet.png"
+      ],
+      "inputCoverage": "full",
+      "inputReviewNote": "Eight right-facing poses; compare alternate support order before choosing final cycle.",
+      "review": {
+        "status": "new_variant_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/07-common-walk-lu-walk-right/sources/expanded-sheet-v2.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "08-common-happy-walk-lu-happy-walk-left",
+      "clip": "Common/Happy_Walk/Lu_Happy_Walk_Left",
+      "status": "ready",
+      "input": null,
+      "playback": {
+        "assetRevision": "74017b964c6b",
+        "breathEffect": {
+          "enabled": false,
+          "baked": false,
+          "reason": "The action supplies its own body motion; no extra breathing deformation during locomotion, laughter, flight or waking."
+        },
+        "file": "animation/sparky/improved/08-common-happy-walk-lu-happy-walk-left/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 2,
+        "count": 8,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "atlasFrameCount": 8,
+        "holds": [
+          83.33333333333333,
+          166.66666666666666,
+          166.66666666666666,
+          83.33333333333333,
+          83.33333333333333,
+          166.66666666666666,
+          166.66666666666666,
+          83.33333333333333
+        ],
+        "fps": 6,
+        "loop": true,
+        "breathing": false,
+        "offsets": [],
+        "note": "Common/Happy_Walk/Lu_Happy_Walk_Left · normalized 512×640 export, 8 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "unmatched",
+      "inputReviewNote": "No confidently matched left-facing happy-walk source identified. Do not mirror an asymmetric character to invent it.",
+      "review": {
+        "status": "new_variant_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/08-common-happy-walk-lu-happy-walk-left/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "09-common-happy-walk-lu-happy-walk-right",
+      "clip": "Common/Happy_Walk/Lu_Happy_Walk_Right",
+      "status": "ready",
+      "input": "unpolished anmations/09_Common_Happy_Walk_Lu_Happy_Walk_Right.png",
+      "playback": {
+        "assetRevision": "a6ff6cc31b6a",
+        "breathEffect": {
+          "enabled": false,
+          "baked": false,
+          "reason": "The action supplies its own body motion; no extra breathing deformation during locomotion, laughter, flight or waking."
+        },
+        "file": "animation/sparky/improved/09-common-happy-walk-lu-happy-walk-right/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 2,
+        "count": 8,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "atlasFrameCount": 8,
+        "holds": [
+          83.33333333333333,
+          166.66666666666666,
+          166.66666666666666,
+          83.33333333333333,
+          83.33333333333333,
+          166.66666666666666,
+          166.66666666666666,
+          83.33333333333333
+        ],
+        "fps": 6,
+        "loop": true,
+        "breathing": false,
+        "offsets": [],
+        "note": "Common/Happy_Walk/Lu_Happy_Walk_Right · normalized 512×640 export, 8 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "candidate",
+      "inputReviewNote": "Proposed cheerful right-facing gait; distinct happy-walk mechanics require confirmation in playback.",
+      "review": {
+        "status": "new_variant_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/09-common-happy-walk-lu-happy-walk-right/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "10-running-animation",
+      "clip": "Running_Animation",
+      "status": "ready",
+      "input": "unpolished anmations/10_Running_Animation.png",
+      "playback": {
+        "assetRevision": "d4ae3e679f51",
+        "breathEffect": {
+          "enabled": false,
+          "baked": false,
+          "reason": "The action supplies its own body motion; no extra breathing deformation during locomotion, laughter, flight or waking."
+        },
+        "file": "animation/sparky/improved/10-running-animation/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 2,
+        "count": 8,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "atlasFrameCount": 8,
+        "holds": [
+          80,
+          65,
+          65,
+          110,
+          80,
+          65,
+          65,
+          110
+        ],
+        "fps": 12.5,
+        "loop": true,
+        "breathing": false,
+        "offsets": [],
+        "note": "Running_Animation · normalized 512×640 export, 8 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "full",
+      "inputReviewNote": "Six running keys, 3 by 2; preserve flight and stance contact changes.",
+      "review": {
+        "status": "run_registration_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/10-running-animation/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "11-toy-garden-happy-jumping",
+      "clip": "Toy_Garden/Happy_Jumping",
+      "status": "ready",
+      "input": "unpolished anmations/11_Toy_Garden_Happy_Jumping.png",
+      "playback": {
+        "assetRevision": "3fa1ab3c2d5e",
+        "breathEffect": {
+          "enabled": false,
+          "baked": false,
+          "reason": "The action supplies its own body motion; no extra breathing deformation during locomotion, laughter, flight or waking."
+        },
+        "file": "animation/sparky/improved/11-toy-garden-happy-jumping/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 2,
+        "count": 8,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "atlasFrameCount": 8,
+        "holds": [
+          180,
+          80,
+          100,
+          70,
+          110,
+          80,
+          100,
+          500
+        ],
+        "fps": 10,
+        "loop": false,
+        "breathing": false,
+        "offsets": [],
+        "note": "Toy_Garden/Happy_Jumping · normalized 512×640 export, 8 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "full",
+      "inputReviewNote": "Six jump keys, 3 by 2; jump height must not be removed by floor alignment.",
+      "review": {
+        "status": "redraw_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/11-toy-garden-happy-jumping/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "12-smiling",
+      "clip": "Smiling",
+      "status": "ready",
+      "input": "unpolished anmations/12_Smiling.png",
+      "playback": {
+        "assetRevision": "be15b254772b",
+        "breathEffect": {
+          "enabled": true,
+          "baked": false,
+          "amplitudePx": 1.5,
+          "periodMs": 3600,
+          "poses": [
+            {
+              "upperY": 419,
+              "fixedY": 504
+            },
+            {
+              "upperY": 419,
+              "fixedY": 504
+            },
+            {
+              "upperY": 419,
+              "fixedY": 504
+            },
+            {
+              "upperY": 419,
+              "fixedY": 504
+            },
+            {
+              "upperY": 419,
+              "fixedY": 504
+            },
+            {
+              "upperY": 419,
+              "fixedY": 504
+            },
+            {
+              "upperY": 419,
+              "fixedY": 504
+            },
+            {
+              "upperY": 419,
+              "fixedY": 504
+            }
+          ],
+          "stableBands": true,
+          "method": "One fixed anatomical mapping per stationary clip; subtle rigid upper pose lift, C1 chest extension and unchanged lower contacts. Independent continuous clock across loops and terminal holds. No per-frame band changes."
+        },
+        "file": "animation/sparky/improved/12-smiling/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 2,
+        "count": 8,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "atlasFrameCount": 8,
+        "holds": [
+          180,
+          80,
+          80,
+          100,
+          140,
+          220,
+          360,
+          600
+        ],
+        "fps": 5.555555555555555,
+        "loop": false,
+        "breathing": false,
+        "offsets": [],
+        "note": "Smiling · normalized 512×640 export, 8 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "full",
+      "inputReviewNote": "Three expression keys; remaining cell unused.",
+      "review": {
+        "status": "new_variant_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/12-smiling/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "13-wow",
+      "clip": "Wow",
+      "status": "ready",
+      "input": "unpolished anmations/13_Wow.png",
+      "playback": {
+        "assetRevision": "347f76f7a835",
+        "breathEffect": {
+          "enabled": true,
+          "baked": false,
+          "amplitudePx": 1.5,
+          "periodMs": 3600,
+          "poses": [
+            {
+              "upperY": 417,
+              "fixedY": 502
+            },
+            {
+              "upperY": 417,
+              "fixedY": 502
+            },
+            {
+              "upperY": 417,
+              "fixedY": 502
+            },
+            {
+              "upperY": 417,
+              "fixedY": 502
+            },
+            {
+              "upperY": 417,
+              "fixedY": 502
+            },
+            {
+              "upperY": 417,
+              "fixedY": 502
+            },
+            {
+              "upperY": 417,
+              "fixedY": 502
+            },
+            {
+              "upperY": 417,
+              "fixedY": 502
+            },
+            {
+              "upperY": 417,
+              "fixedY": 502
+            },
+            {
+              "upperY": 417,
+              "fixedY": 502
+            },
+            {
+              "upperY": 417,
+              "fixedY": 502
+            },
+            {
+              "upperY": 417,
+              "fixedY": 502
+            },
+            {
+              "upperY": 417,
+              "fixedY": 502
+            },
+            {
+              "upperY": 417,
+              "fixedY": 502
+            },
+            {
+              "upperY": 417,
+              "fixedY": 502
+            },
+            {
+              "upperY": 417,
+              "fixedY": 502
+            },
+            {
+              "upperY": 417,
+              "fixedY": 502
+            }
+          ],
+          "stableBands": true,
+          "method": "One fixed anatomical mapping per stationary clip; subtle rigid upper pose lift, C1 chest extension and unchanged lower contacts. Independent continuous clock across loops and terminal holds. No per-frame band changes."
+        },
+        "file": "animation/sparky/improved/13-wow/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 3,
+        "count": 17,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "atlasFrameCount": 9,
+        "holds": [
+          165,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          285,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          245
+        ],
+        "fps": 22.22222222222222,
+        "loop": false,
+        "breathing": false,
+        "offsets": [],
+        "note": "Wow · normalized 512×640 export, 17 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "full",
+      "inputReviewNote": "Four surprise keys with hand/torso articulation.",
+      "review": {
+        "status": "redraw_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/13-wow/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "14-n2-lu-laugh-03-tummy-hand",
+      "clip": "N2/Lu_Laugh_03_Tummy_Hand",
+      "status": "ready",
+      "input": "unpolished anmations/14_N2_Lu_Laugh_03_Tummy_Hand.png",
+      "playback": {
+        "assetRevision": "88af00632e47",
+        "breathEffect": {
+          "enabled": false,
+          "baked": false,
+          "reason": "The action supplies its own body motion; no extra breathing deformation during locomotion, laughter, flight or waking."
+        },
+        "file": "animation/sparky/improved/14-n2-lu-laugh-03-tummy-hand/optimized-v1/spritesheet.png",
+        "columns": 3,
+        "rows": 2,
+        "count": 8,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          3,
+          2,
+          1
+        ],
+        "atlasFrameCount": 5,
+        "holds": [
+          105,
+          45,
+          45,
+          45,
+          115,
+          45,
+          45,
+          45
+        ],
+        "fps": 22.22222222222222,
+        "loop": true,
+        "breathing": false,
+        "offsets": [],
+        "note": "N2/Lu_Laugh_03_Tummy_Hand · normalized 512×640 export, 8 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "full",
+      "inputReviewNote": "Four laughter poses; preserve tummy-hand contact while torso bends.",
+      "review": {
+        "status": "redraw_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/14-n2-lu-laugh-03-tummy-hand/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "15-lu-brave",
+      "clip": "Lu_Brave",
+      "status": "ready",
+      "input": "unpolished anmations/15_Lu_Brave.png",
+      "playback": {
+        "assetRevision": "021c3258da68",
+        "breathEffect": {
+          "enabled": true,
+          "baked": false,
+          "amplitudePx": 1.5,
+          "periodMs": 3600,
+          "poses": [
+            {
+              "upperY": 407,
+              "fixedY": 492
+            },
+            {
+              "upperY": 407,
+              "fixedY": 492
+            },
+            {
+              "upperY": 407,
+              "fixedY": 492
+            },
+            {
+              "upperY": 407,
+              "fixedY": 492
+            },
+            {
+              "upperY": 407,
+              "fixedY": 492
+            },
+            {
+              "upperY": 407,
+              "fixedY": 492
+            },
+            {
+              "upperY": 407,
+              "fixedY": 492
+            },
+            {
+              "upperY": 407,
+              "fixedY": 492
+            },
+            {
+              "upperY": 407,
+              "fixedY": 492
+            }
+          ],
+          "stableBands": true,
+          "method": "One fixed anatomical mapping per stationary clip; subtle rigid upper pose lift, C1 chest extension and unchanged lower contacts. Independent continuous clock across loops and terminal holds. No per-frame band changes."
+        },
+        "file": "animation/sparky/improved/15-lu-brave/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 3,
+        "count": 9,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "atlasFrameCount": 9,
+        "holds": [
+          185,
+          65,
+          65,
+          65,
+          65,
+          65,
+          65,
+          65,
+          665
+        ],
+        "fps": 15.384615384615385,
+        "loop": false,
+        "breathing": false,
+        "offsets": [],
+        "note": "Lu_Brave · normalized 512×640 export, 9 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "full",
+      "inputReviewNote": "Four confidence/hand-to-hip poses.",
+      "review": {
+        "status": "redraw_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/15-lu-brave/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "16-entry-thumbs-up",
+      "clip": "Entry_Thumbs_Up",
+      "status": "ready",
+      "input": "unpolished anmations/16_Entry_Thumbs_Up.png",
+      "playback": {
+        "assetRevision": "ebea89cdc5a5",
+        "breathEffect": {
+          "enabled": true,
+          "baked": false,
+          "amplitudePx": 1.5,
+          "periodMs": 3600,
+          "poses": [
+            {
+              "upperY": 406,
+              "fixedY": 491
+            },
+            {
+              "upperY": 406,
+              "fixedY": 491
+            },
+            {
+              "upperY": 406,
+              "fixedY": 491
+            },
+            {
+              "upperY": 406,
+              "fixedY": 491
+            },
+            {
+              "upperY": 406,
+              "fixedY": 491
+            },
+            {
+              "upperY": 406,
+              "fixedY": 491
+            },
+            {
+              "upperY": 406,
+              "fixedY": 491
+            },
+            {
+              "upperY": 406,
+              "fixedY": 491
+            },
+            {
+              "upperY": 406,
+              "fixedY": 491
+            }
+          ],
+          "stableBands": true,
+          "method": "One fixed anatomical mapping per stationary clip; subtle rigid upper pose lift, C1 chest extension and unchanged lower contacts. Independent continuous clock across loops and terminal holds. No per-frame band changes."
+        },
+        "file": "animation/sparky/improved/16-entry-thumbs-up/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 3,
+        "count": 9,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "atlasFrameCount": 9,
+        "holds": [
+          185,
+          65,
+          65,
+          65,
+          65,
+          65,
+          65,
+          65,
+          665
+        ],
+        "fps": 15.384615384615385,
+        "loop": false,
+        "breathing": false,
+        "offsets": [],
+        "note": "Entry_Thumbs_Up · normalized 512×640 export, 9 frames. Visual review pending."
+      },
+      "inputAlternatives": [
+        "animation/sparky/source-archive/unpolished-duplicates/Sparky's Four-Stage Thumbs-Up Pose Sheet-3.png"
+      ],
+      "inputCoverage": "full",
+      "inputReviewNote": "Prefer corrected upright final pose; alternate contains a wink.",
+      "review": {
+        "status": "redraw_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/16-entry-thumbs-up/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "17-clapping",
+      "clip": "Clapping",
+      "status": "ready",
+      "input": "unpolished anmations/17_Clapping.png",
+      "playback": {
+        "assetRevision": "87e278a4e3d2",
+        "breathEffect": {
+          "enabled": true,
+          "baked": false,
+          "amplitudePx": 1.5,
+          "periodMs": 3600,
+          "poses": [
+            {
+              "upperY": 403,
+              "fixedY": 488
+            },
+            {
+              "upperY": 403,
+              "fixedY": 488
+            },
+            {
+              "upperY": 403,
+              "fixedY": 488
+            },
+            {
+              "upperY": 403,
+              "fixedY": 488
+            },
+            {
+              "upperY": 403,
+              "fixedY": 488
+            },
+            {
+              "upperY": 403,
+              "fixedY": 488
+            },
+            {
+              "upperY": 403,
+              "fixedY": 488
+            },
+            {
+              "upperY": 403,
+              "fixedY": 488
+            },
+            {
+              "upperY": 403,
+              "fixedY": 488
+            },
+            {
+              "upperY": 403,
+              "fixedY": 488
+            },
+            {
+              "upperY": 403,
+              "fixedY": 488
+            },
+            {
+              "upperY": 403,
+              "fixedY": 488
+            },
+            {
+              "upperY": 403,
+              "fixedY": 488
+            },
+            {
+              "upperY": 403,
+              "fixedY": 488
+            },
+            {
+              "upperY": 403,
+              "fixedY": 488
+            },
+            {
+              "upperY": 403,
+              "fixedY": 488
+            }
+          ],
+          "stableBands": true,
+          "method": "One fixed anatomical mapping per stationary clip; subtle rigid upper pose lift, C1 chest extension and unchanged lower contacts. Independent continuous clock across loops and terminal holds. No per-frame band changes."
+        },
+        "file": "animation/sparky/improved/17-clapping/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 3,
+        "count": 16,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "atlasFrameCount": 9,
+        "holds": [
+          70,
+          35,
+          35,
+          35,
+          35,
+          35,
+          35,
+          35,
+          80,
+          35,
+          35,
+          35,
+          35,
+          35,
+          35,
+          35
+        ],
+        "fps": 28.571428571428573,
+        "loop": true,
+        "breathing": false,
+        "offsets": [],
+        "note": "Clapping · normalized 512×640 export, 16 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "full",
+      "inputReviewNote": "Four clap keys; check palm alignment/contact before timing.",
+      "review": {
+        "status": "redraw_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/17-clapping/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "18-front-hi",
+      "clip": "Front_Hi",
+      "status": "ready",
+      "input": "unpolished anmations/18_Front_Hi.png",
+      "playback": {
+        "assetRevision": "e6d0dd2bf249",
+        "breathEffect": {
+          "enabled": true,
+          "baked": false,
+          "amplitudePx": 1.5,
+          "periodMs": 3600,
+          "poses": [
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            },
+            {
+              "upperY": 390,
+              "fixedY": 475
+            }
+          ],
+          "stableBands": true,
+          "method": "One fixed anatomical mapping per stationary clip; subtle rigid upper pose lift, C1 chest extension and unchanged lower contacts. Independent continuous clock across loops and terminal holds. No per-frame band changes."
+        },
+        "file": "animation/sparky/improved/18-front-hi/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 3,
+        "count": 21,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          6,
+          7,
+          8,
+          9,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "atlasFrameCount": 10,
+        "holds": [
+          180,
+          85,
+          85,
+          85,
+          85,
+          85,
+          85,
+          85,
+          110,
+          85,
+          85,
+          85,
+          110,
+          85,
+          85,
+          85,
+          85,
+          85,
+          85,
+          85,
+          400
+        ],
+        "fps": 11.764705882352942,
+        "loop": false,
+        "breathing": false,
+        "offsets": [],
+        "note": "Front_Hi · normalized 512×640 export, 21 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "full",
+      "inputReviewNote": "Five greeting poses, 3 by 2; unused cell stays outside playback.",
+      "review": {
+        "status": "front_hi_motion_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/18-front-hi/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "19-c-saying-yes",
+      "clip": "C_Saying_Yes",
+      "status": "ready",
+      "input": "unpolished anmations/19_C_Saying_Yes.png",
+      "playback": {
+        "assetRevision": "059edd46db23",
+        "breathEffect": {
+          "enabled": true,
+          "baked": false,
+          "amplitudePx": 1.5,
+          "periodMs": 3600,
+          "poses": [
+            {
+              "upperY": 428,
+              "fixedY": 513
+            },
+            {
+              "upperY": 428,
+              "fixedY": 513
+            },
+            {
+              "upperY": 428,
+              "fixedY": 513
+            },
+            {
+              "upperY": 428,
+              "fixedY": 513
+            },
+            {
+              "upperY": 428,
+              "fixedY": 513
+            },
+            {
+              "upperY": 428,
+              "fixedY": 513
+            },
+            {
+              "upperY": 428,
+              "fixedY": 513
+            },
+            {
+              "upperY": 428,
+              "fixedY": 513
+            },
+            {
+              "upperY": 428,
+              "fixedY": 513
+            },
+            {
+              "upperY": 428,
+              "fixedY": 513
+            },
+            {
+              "upperY": 428,
+              "fixedY": 513
+            },
+            {
+              "upperY": 428,
+              "fixedY": 513
+            },
+            {
+              "upperY": 428,
+              "fixedY": 513
+            },
+            {
+              "upperY": 428,
+              "fixedY": 513
+            },
+            {
+              "upperY": 428,
+              "fixedY": 513
+            },
+            {
+              "upperY": 428,
+              "fixedY": 513
+            },
+            {
+              "upperY": 428,
+              "fixedY": 513
+            }
+          ],
+          "stableBands": true,
+          "method": "One fixed anatomical mapping per stationary clip; subtle rigid upper pose lift, C1 chest extension and unchanged lower contacts. Independent continuous clock across loops and terminal holds. No per-frame band changes."
+        },
+        "file": "animation/sparky/improved/19-c-saying-yes/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 3,
+        "count": 17,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "atlasFrameCount": 9,
+        "holds": [
+          160,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          120,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          240
+        ],
+        "fps": 25,
+        "loop": false,
+        "breathing": false,
+        "offsets": [],
+        "note": "C_Saying_Yes · normalized 512×640 export, 17 frames. Visual review pending."
+      },
+      "inputAlternatives": [
+        "animation/sparky/source-archive/unpolished-duplicates/Sparky three-key agreement nod sheet.png",
+        "animation/sparky/source-archive/unpolished-duplicates/Sparky’s three-beat agreement nod.png",
+        "animation/sparky/source-archive/unpolished-duplicates/Sparky’s three-beat agreement nod (1).png"
+      ],
+      "inputCoverage": "full",
+      "inputReviewNote": "Three nod poses. Compare refined down/up head construction; two alternatives are byte-identical.",
+      "review": {
+        "status": "redraw_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/19-c-saying-yes/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "20-saying-no",
+      "clip": "Saying_No",
+      "status": "ready",
+      "input": "unpolished anmations/20_Saying_No.png",
+      "playback": {
+        "assetRevision": "b54f048c4ee6",
+        "breathEffect": {
+          "enabled": true,
+          "baked": false,
+          "amplitudePx": 1.5,
+          "periodMs": 3600,
+          "poses": [
+            {
+              "upperY": 424,
+              "fixedY": 509
+            },
+            {
+              "upperY": 424,
+              "fixedY": 509
+            },
+            {
+              "upperY": 424,
+              "fixedY": 509
+            },
+            {
+              "upperY": 424,
+              "fixedY": 509
+            },
+            {
+              "upperY": 424,
+              "fixedY": 509
+            },
+            {
+              "upperY": 424,
+              "fixedY": 509
+            },
+            {
+              "upperY": 424,
+              "fixedY": 509
+            },
+            {
+              "upperY": 424,
+              "fixedY": 509
+            },
+            {
+              "upperY": 424,
+              "fixedY": 509
+            },
+            {
+              "upperY": 424,
+              "fixedY": 509
+            },
+            {
+              "upperY": 424,
+              "fixedY": 509
+            },
+            {
+              "upperY": 424,
+              "fixedY": 509
+            },
+            {
+              "upperY": 424,
+              "fixedY": 509
+            },
+            {
+              "upperY": 424,
+              "fixedY": 509
+            },
+            {
+              "upperY": 424,
+              "fixedY": 509
+            },
+            {
+              "upperY": 424,
+              "fixedY": 509
+            },
+            {
+              "upperY": 424,
+              "fixedY": 509
+            }
+          ],
+          "stableBands": true,
+          "method": "One fixed anatomical mapping per stationary clip; subtle rigid upper pose lift, C1 chest extension and unchanged lower contacts. Independent continuous clock across loops and terminal holds. No per-frame band changes."
+        },
+        "file": "animation/sparky/improved/20-saying-no/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 3,
+        "count": 17,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          3,
+          2,
+          1,
+          0,
+          5,
+          6,
+          7,
+          8,
+          7,
+          6,
+          5,
+          0
+        ],
+        "atlasFrameCount": 9,
+        "holds": [
+          165,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          245
+        ],
+        "fps": 22.22222222222222,
+        "loop": false,
+        "breathing": false,
+        "offsets": [],
+        "note": "Saying_No · normalized 512×640 export, 17 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "candidate",
+      "inputReviewNote": "Proposed head-shake source shows forward and two turn directions; confirm side identities and order before processing.",
+      "review": {
+        "status": "redraw_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/20-saying-no/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "21-entry-pointing",
+      "clip": "Entry_Pointing",
+      "status": "ready",
+      "input": "unpolished anmations/21_Entry_Pointing.png",
+      "playback": {
+        "assetRevision": "6476da9d3506",
+        "breathEffect": {
+          "enabled": true,
+          "baked": false,
+          "amplitudePx": 1.5,
+          "periodMs": 3600,
+          "poses": [
+            {
+              "upperY": 406,
+              "fixedY": 491
+            },
+            {
+              "upperY": 406,
+              "fixedY": 491
+            },
+            {
+              "upperY": 406,
+              "fixedY": 491
+            },
+            {
+              "upperY": 406,
+              "fixedY": 491
+            },
+            {
+              "upperY": 406,
+              "fixedY": 491
+            },
+            {
+              "upperY": 406,
+              "fixedY": 491
+            },
+            {
+              "upperY": 406,
+              "fixedY": 491
+            },
+            {
+              "upperY": 406,
+              "fixedY": 491
+            }
+          ],
+          "stableBands": true,
+          "method": "One fixed anatomical mapping per stationary clip; subtle rigid upper pose lift, C1 chest extension and unchanged lower contacts. Independent continuous clock across loops and terminal holds. No per-frame band changes."
+        },
+        "file": "animation/sparky/improved/21-entry-pointing/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 2,
+        "count": 8,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "atlasFrameCount": 8,
+        "holds": [
+          185,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55,
+          655
+        ],
+        "fps": 18.181818181818183,
+        "loop": false,
+        "breathing": false,
+        "offsets": [],
+        "note": "Entry_Pointing · normalized 512×640 export, 8 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "full",
+      "inputReviewNote": "Four pointing poses.",
+      "review": {
+        "status": "redraw_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/21-entry-pointing/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "22-lu-air-hugs",
+      "clip": "Lu_Air_Hugs",
+      "status": "ready",
+      "input": "unpolished anmations/22_Lu_Air_Hugs.png",
+      "playback": {
+        "assetRevision": "5b597fde3507",
+        "breathEffect": {
+          "enabled": true,
+          "baked": false,
+          "amplitudePx": 1.5,
+          "periodMs": 3600,
+          "poses": [
+            {
+              "upperY": 414,
+              "fixedY": 499
+            },
+            {
+              "upperY": 414,
+              "fixedY": 499
+            },
+            {
+              "upperY": 414,
+              "fixedY": 499
+            },
+            {
+              "upperY": 414,
+              "fixedY": 499
+            },
+            {
+              "upperY": 414,
+              "fixedY": 499
+            },
+            {
+              "upperY": 414,
+              "fixedY": 499
+            },
+            {
+              "upperY": 414,
+              "fixedY": 499
+            },
+            {
+              "upperY": 414,
+              "fixedY": 499
+            },
+            {
+              "upperY": 414,
+              "fixedY": 499
+            },
+            {
+              "upperY": 414,
+              "fixedY": 499
+            },
+            {
+              "upperY": 414,
+              "fixedY": 499
+            },
+            {
+              "upperY": 414,
+              "fixedY": 499
+            },
+            {
+              "upperY": 414,
+              "fixedY": 499
+            },
+            {
+              "upperY": 414,
+              "fixedY": 499
+            },
+            {
+              "upperY": 414,
+              "fixedY": 499
+            }
+          ],
+          "stableBands": true,
+          "method": "One fixed anatomical mapping per stationary clip; subtle rigid upper pose lift, C1 chest extension and unchanged lower contacts. Independent continuous clock across loops and terminal holds. No per-frame band changes."
+        },
+        "file": "animation/sparky/improved/22-lu-air-hugs/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 2,
+        "count": 15,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "atlasFrameCount": 8,
+        "holds": [
+          185,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55,
+          255,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55,
+          275
+        ],
+        "fps": 18.181818181818183,
+        "loop": false,
+        "breathing": false,
+        "offsets": [],
+        "note": "Lu_Air_Hugs · normalized 512×640 export, 15 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "full",
+      "inputReviewNote": "Five arm-open/hug/recovery poses.",
+      "review": {
+        "status": "redraw_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/22-lu-air-hugs/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "23-toy-garden-lu-seat-idle",
+      "clip": "Toy_Garden/Lu_Seat_Idle",
+      "status": "ready",
+      "input": "unpolished anmations/25_Sequence_4_Sleep_Wakeup.png",
+      "playback": {
+        "assetRevision": "4fe1bbed7d92",
+        "breathEffect": {
+          "enabled": false,
+          "baked": true,
+          "reason": "Breathing already exists in these playback cells."
+        },
+        "file": "animation/sparky/improved/23-toy-garden-lu-seat-idle/optimized-v1/spritesheet.png",
+        "columns": 7,
+        "rows": 6,
+        "count": 70,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          34,
+          33,
+          32,
+          31,
+          30,
+          29,
+          28,
+          27,
+          26,
+          25,
+          24,
+          23,
+          22,
+          21,
+          20,
+          19,
+          18,
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "atlasFrameCount": 36,
+        "holds": [
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "fps": 25,
+        "loop": true,
+        "breathing": false,
+        "offsets": [],
+        "note": "Toy_Garden/Lu_Seat_Idle · normalized 512×640 export, 70 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "partial",
+      "inputReviewNote": "Only a seated ending is present in the wake-up sheet; a complete seated breathing cycle is not supplied.",
+      "review": {
+        "status": "seated_breathing_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/23-toy-garden-lu-seat-idle/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "24-sequence-4-sleep",
+      "clip": "Sequence/4/Sleep",
+      "status": "ready",
+      "input": "unpolished anmations/25_Sequence_4_Sleep_Wakeup.png",
+      "playback": {
+        "assetRevision": "cf6698091307",
+        "breathEffect": {
+          "enabled": false,
+          "baked": true,
+          "reason": "Breathing already exists in these playback cells."
+        },
+        "file": "animation/sparky/improved/24-sequence-4-sleep/optimized-v1/spritesheet.png",
+        "columns": 8,
+        "rows": 6,
+        "count": 80,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          39,
+          38,
+          37,
+          36,
+          35,
+          34,
+          33,
+          32,
+          31,
+          30,
+          29,
+          28,
+          27,
+          26,
+          25,
+          24,
+          23,
+          22,
+          21,
+          20,
+          19,
+          18,
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "atlasFrameCount": 41,
+        "holds": [
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "fps": 25,
+        "loop": true,
+        "breathing": false,
+        "offsets": [],
+        "note": "Sequence/4/Sleep · normalized 512×640 export, 80 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "partial",
+      "inputReviewNote": "Only the first lying/sleep pose is present; a breathing loop must be built from this anchor.",
+      "review": {
+        "status": "sleep_bubble_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/24-sequence-4-sleep/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "25-sequence-4-sleep-wakeup",
+      "clip": "Sequence/4/Sleep_Wakeup",
+      "status": "ready",
+      "input": "unpolished anmations/25_Sequence_4_Sleep_Wakeup.png",
+      "playback": {
+        "assetRevision": "10d4862564b6",
+        "breathEffect": {
+          "enabled": false,
+          "baked": false,
+          "reason": "The action supplies its own body motion; no extra breathing deformation during locomotion, laughter, flight or waking."
+        },
+        "file": "animation/sparky/improved/25-sequence-4-sleep-wakeup/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 3,
+        "count": 9,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "atlasFrameCount": 9,
+        "holds": [
+          215,
+          85,
+          85,
+          85,
+          85,
+          85,
+          85,
+          85,
+          685
+        ],
+        "fps": 11.764705882352942,
+        "loop": false,
+        "breathing": false,
+        "offsets": [],
+        "note": "Sequence/4/Sleep_Wakeup · normalized 512×640 export, 9 frames. Visual review pending."
+      },
+      "inputAlternatives": [
+        "animation/sparky/source-archive/unpolished-duplicates/Sparky’s five-key sleep-to-seated sequence.png",
+        "animation/sparky/source-archive/unpolished-duplicates/Five-Key Wake-Up Pose Study.png"
+      ],
+      "inputCoverage": "full",
+      "inputReviewNote": "Five wake-up keys; preserve floor/elbow/palm support transitions rather than aligning every silhouette bottom.",
+      "review": {
+        "status": "redraw_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/25-sequence-4-sleep-wakeup/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "26-juice-mode-idle-to-pick-glass",
+      "clip": "Juice Mode/Idle_To_Pick_Glass",
+      "status": "ready",
+      "input": "unpolished anmations/26_Juice_Mode_Idle_To_Pick_Glass.png",
+      "playback": {
+        "assetRevision": "73e7b123c23d",
+        "breathEffect": {
+          "enabled": false,
+          "baked": false,
+          "reason": "Pickup keeps its prop rigid; no whole-sheet breathing transform."
+        },
+        "file": "animation/sparky/improved/26-juice-mode-idle-to-pick-glass/optimized-v1/spritesheet.png",
+        "columns": 4,
+        "rows": 3,
+        "count": 9,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "atlasFrameCount": 9,
+        "holds": [
+          205,
+          75,
+          75,
+          75,
+          75,
+          75,
+          75,
+          75,
+          675
+        ],
+        "fps": 13.333333333333334,
+        "loop": false,
+        "breathing": false,
+        "offsets": [],
+        "note": "Juice Mode/Idle_To_Pick_Glass · normalized 512×640 export, 9 frames. Visual review pending."
+      },
+      "inputAlternatives": [
+        "animation/sparky/source-archive/unpolished-duplicates/Sparky_Pick_Glass_5_Keys_Review.png"
+      ],
+      "inputCoverage": "full",
+      "inputReviewNote": "Five pickup poses. Source character/support proportions differ between alternatives; choose one whole sequence, do not mix designs.",
+      "review": {
+        "status": "redraw_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/26-juice-mode-idle-to-pick-glass/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "27-intro-dance-lu-dance-hipmove",
+      "clip": "Cute_Bounce_Dance",
+      "status": "ready",
+      "input": "animation/sparky/improved/27-intro-dance-lu-dance-hipmove/cute-bounce-v1/sources/character.png",
+      "playback": {
+        "assetRevision": "fe60d6276988",
+        "breathEffect": {
+          "enabled": false,
+          "baked": true,
+          "reason": "Dance motion is baked into these cells; no extra runtime transform."
+        },
+        "file": "animation/sparky/improved/27-intro-dance-lu-dance-hipmove/optimized-v1/spritesheet.png",
+        "columns": 6,
+        "rows": 5,
+        "count": 48,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          23,
+          22,
+          21,
+          20,
+          19,
+          18,
+          17,
+          25,
+          15,
+          14,
+          13
+        ],
+        "atlasFrameCount": 26,
+        "holds": [
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33
+        ],
+        "fps": 30.303030303030305,
+        "loop": true,
+        "breathing": false,
+        "offsets": [],
+        "note": "Cute_Bounce_Dance · normalized 512×640 export, 48 frames. Visual review pending."
+      },
+      "inputAlternatives": [],
+      "inputCoverage": "full",
+      "inputReviewNote": "Four hip-sway keys; retain pelvis motion while fixing planted soles.",
+      "review": {
+        "status": "cute_bounce_review",
+        "artisticApproval": false
+      },
+      "generatedSource": "animation/sparky/improved/27-intro-dance-lu-dance-hipmove/sources/expanded-sheet-v1.png",
+      "exportCoverage": "full_cycle_or_one_shot"
+    },
+    {
+      "id": "28-blowing-whistle",
+      "clip": "Blowing_Whistle",
+      "status": "ready",
+      "input": "animation/sparky/improved/28-blowing-whistle/whistle-v1/sources/character.png",
+      "playback": {
+        "assetRevision": "513f2338fe5d",
+        "breathEffect": {
+          "enabled": false,
+          "baked": false,
+          "reason": "Whistle prop motion is baked; the grip and mouthpiece remain fixed. No audio is bundled."
+        },
+        "file": "animation/sparky/improved/28-blowing-whistle/optimized-v1/spritesheet.png",
+        "columns": 6,
+        "rows": 4,
+        "count": 45,
+        "frameMap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          21,
+          20,
+          19,
+          18,
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          23,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "atlasFrameCount": 24,
+        "holds": [
+          67,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          100,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33
+        ],
+        "fps": 30.303030303030305,
+        "loop": true,
+        "breathing": false,
+        "offsets": [],
+        "note": "Blowing_Whistle · normalized 512×640 export, 45 frames. Visual review pending."
+      },
+      "review": {
+        "status": "new_party_whistle_review",
+        "artisticApproval": false
+      }
+    }
+  ],
+  "sourceDeduplication": {
+    "activeFolder": "unpolished anmations",
+    "activeSheetCount": 23,
+    "archiveFolder": "animation/sparky/source-archive/unpolished-duplicates",
+    "archivedSheetCount": 9
+  }
+}
