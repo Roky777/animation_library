@@ -1,21 +1,27 @@
 # Sparky Animation Library
 
-A browser-based library of 29 character animations with looping previews, search, collections, an inspection studio and game-ready ZIP exports.
+A standalone browser library with **29 Sparky animations**, looping gallery previews, a dark animation studio and game-ready exports.
 
-## Run locally
+## Run
 
 ```sh
 python3 -m http.server 8000
 ```
 
-Open **http://localhost:8000/animation-library/index.html**. No package installation or API key is required. The original Lucas rig inspector remains at `/index.html`; it loads the Spine runtime from a CDN.
+Open **http://localhost:8000/animation-library/index.html**.
 
-## Use the library
+No build step, API key, external service or package installation is required. Serve the files over HTTP rather than opening the HTML directly.
 
-- Browse and select clips, then download a ZIP or use **Save to game folder** in browsers supporting directory access.
-- Exported packs include transparent PNG atlases, JSON playback data, a Canvas player, per-clip Markdown guides, a manifest, a preview and `AGENT_INSTRUCTIONS.md` for coding agents.
-- Open a card's arrow for frame scrubbing, onion skin, same-scale comparison, zoom, background choices, ground guides and current-frame PNG capture.
-- Gallery previews repeat for browsing. Game exports preserve each animation's original loop or one-shot behavior.
+## Features
+
+- Search, collections and multi-selection.
+- Looping animation previews with pause and speed controls.
+- Frame timeline, onion skin, same-scale comparison, zoom, backgrounds and root guides.
+- Current-frame PNG capture and copyable integration code.
+- Selected-animation ZIP exports with PNG atlases, JSON timing, the Canvas player, Markdown guides and agent integration instructions.
+- Direct game-folder export in browsers supporting directory access, with ZIP export as the alternative.
+
+The Dance collection contains both **Cute Bounce Dance** and **Hip Dance**. **Blowing Whistle** is under Celebrations and is a visual animation without audio.
 
 ## Integrate into a game
 
@@ -29,28 +35,27 @@ const player = await SpriteSheetPlayer.load(
 player.play();
 ```
 
-Keep the shared cell size and root across actions. The atlases are losslessly deduplicated: **use `frameMap[i]` to locate playback exposure i**, then use `frameDurationsMs[i]` for its timing. The bundled player implements that mapping and the documented runtime breathing effects.
+When exporting a pack, give its `AGENT_INSTRUCTIONS.md` to your coding agent. Keep the exported folder structure and use the timing, loop setting and root in each JSON file.
 
-## Project files
+Atlases are losslessly deduplicated. For playback exposure `i`, use `frameMap[i]` to locate the physical atlas cell, then apply `frameDurationsMs[i]`. The bundled player handles this mapping and any runtime breathing effects. Gallery previews repeat for browsing; game exports retain each action's intended loop or one-shot behavior.
 
-| Path | Purpose |
-| --- | --- |
-| `animation-library/` | Portable gallery, studio, player and active clip resources |
-| `animation/sparky/improved/` | Active atlases and collection registry for the sprite runner |
-| `sprite-runner.html` | Standalone sprite-sheet runner |
-| `tools/` | Packaging, validation and original authoring utilities |
-| `tests/` | Runtime and authoring regression checks |
+## Repository contents
 
-The active library is included. Large generated working drafts, rejected sheets, source archives and generated ZIP files stay local and are ignored by Git. Some authoring tools and pixel-regression tests require those original working resources; they are not required to run or export the app.
-
-## Checks and packaging
-
-```sh
-node tests/sprite-player.mjs
-node tests/library-quality.cjs
-python3 tools/package-library-app.py
+```text
+animation-library/
+  index.html                 Gallery and pack export
+  demo.html                  Animation studio
+  library.js, library.css    Gallery behavior and theme
+  animator.css               Studio theme
+  player.js                  Canvas animation player
+  zip.js                     Dependency-free ZIP writer
+  manifest.json              Animation index
+  animations/<clip-id>/
+    spritesheet-optimized-v1.png
+    animation.json
+    animation.md
 ```
 
-The packaging command writes `output/sparky-animation-library-app.zip`. Full source-art regression checks require the local authoring archive.
+This repository contains only the Sparky library and its active resources. Lucas rigs, original sprite experiments and local authoring archives are excluded.
 
-See [app instructions](animation-library/APP_README.md), [integration guide](animation-library/README.md), [optimization notes](animation-library/OPTIMIZATION.md) and [quality review](animation-library/QUALITY_REVIEW.md). Technical checks do not certify artistic quality. The party-whistle clip is a visual animation and does not include audio.
+Read [app instructions](animation-library/APP_README.md), [per-animation guides](animation-library/README.md), [optimization notes](animation-library/OPTIMIZATION.md) and [quality review](animation-library/QUALITY_REVIEW.md). Technical validation does not certify artistic quality.

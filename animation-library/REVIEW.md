@@ -38,7 +38,7 @@ Review at 1× and 0.5× with frame stepping. A production pass on those actions 
 
 ## Research-first study (not published)
 
-A separate researched-v6 study records human-gait sources, an authored8-key schematic and8 key drawings. The partial preview contains3 provisional in-betweens;5 intervals remain unresolved because generated drafts reverse support identities, regress to contact or merge shoes. The original24-frame target is not complete. No new production approval is claimed, and the main manifest still uses drawn-v5. `key-lock.json` verifies all8 original key files; raw RGBA packing also preserves their exact pixels in the partial sheet. See [research preview](../animation/sparky/improved/06-common-walk-lu-walk-left/researched-v6/preview.html).
+A separate researched-v6 study records human-gait sources, an authored8-key schematic and8 key drawings. The partial preview contains3 provisional in-betweens;5 intervals remain unresolved because generated drafts reverse support identities, regress to contact or merge shoes. The original24-frame target is not complete. No new production approval is claimed, and the main manifest still uses drawn-v5. `key-lock.json` verifies all8 original key files; raw RGBA packing also preserves their exact pixels in the partial sheet. See [research preview](demo.html?animation=06-common-walk-lu-walk-left).
 
 ## Approved gait and matching variants (v6)
 

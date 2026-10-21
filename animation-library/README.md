@@ -150,14 +150,14 @@ python3 tools/write-library-guide.py
 
 ## Gesture redraws
 
-[Open all eight gestures at the same scale](gesture-review.html). Wow, tummy laugh, Brave, thumbs-up, clapping, Front_Hi, Saying_Yes and Saying_No use new nine-stage full-character drawings. Planted soles are registered at y592 and head width is normalized before packing. Contact/recovery paths and gesture-specific holds are recorded in each clip JSON. The new artwork is ready for visual review; pixel checks do not certify completely vibration-free motion.
+[Open all eight gestures at the same scale](index.html). Wow, tummy laugh, Brave, thumbs-up, clapping, Front_Hi, Saying_Yes and Saying_No use new nine-stage full-character drawings. Planted soles are registered at y592 and head width is normalized before packing. Contact/recovery paths and gesture-specific holds are recorded in each clip JSON. The new artwork is ready for visual review; pixel checks do not certify completely vibration-free motion.
 
 Working assets and exact built-in imagegen prompts: `animation/sparky/improved/<clip>/polished-v3/`. Rebuild with `node tools/build-gesture-polish.cjs`, publish with `node tools/build-sparky-library.cjs`, and run `node tests/gesture-polish.cjs`.
 
 
 ## Remaining animation repairs
 
-[Review the remaining fourteen clips](remaining-review.html). Wondering, running, jumping, pointing, air hugs, wake-up, glass pickup and hip dance have new working exports in `animation/sparky/improved/<clip>/remaining-v3/`. Built-in imagegen supplied the new artwork, pose-guide corrections and individual runner arm corrections; exact prompts are saved alongside the sources. Source stages that swapped the pointing arm or added a redundant hug blink are excluded from playback.
+[Review the remaining fourteen clips](index.html). Wondering, running, jumping, pointing, air hugs, wake-up, glass pickup and hip dance have new working exports in `animation/sparky/improved/<clip>/remaining-v3/`. Built-in imagegen supplied the new artwork, pose-guide corrections and individual runner arm corrections; exact prompts are saved alongside the sources. Source stages that swapped the pointing arm or added a redundant hug blink are excluded from playback.
 
 Running now uses `registered-run-v4/` with complete source drawings translated to a consistent head-center anchor. This removes 46–52 px flight-frame lateral jumps caused by the old neck detector. Both steps use matching 80/65/65/110 ms phase exposures in a 640 ms loop; rebuild with `node tools/register-run-v4.cjs`. Running retains two flight phases, and jumping uses explicit vertical displacement instead of grounding the airborne frames. The pickup uses one empty pedestal raster with the character/glass rendered in front. Hip dance now uses crisp complete hands-on-hips side-step and close-foot tap drawings in `animation/sparky/improved/27-intro-dance-lu-dance-hipmove/dance-v5/`. Eight playback cells form a 960 ms loop; head scale and horizontal anchor are shared, and the exact center drawing is reused halfway through. The earlier one-image displacement sway was rejected and remains inactive. Exact prompts and earlier candidates are retained.
 
@@ -168,7 +168,7 @@ Rebuild the source registration with `node tools/register-existing-loops.cjs`, r
 
 ## Research-first left-walk study
 
-[Open the gait research and key-pose preview](../animation/sparky/improved/06-common-walk-lu-walk-left/researched-v6/preview.html). Eight key drawings are compared with an authored human-gait schematic. The separate breakdown preview contains three provisional in-betweens; five intervals still need corrected art. The user-approved eight-key sequence is now the active left walk. The separate provisional in-between experiment remains incomplete and is not used in the library. Research links, exact prompts, locked key hashes and rejected-drawing notes are included in that folder.
+[Open the gait research and key-pose preview](demo.html?animation=06-common-walk-lu-walk-left). Eight key drawings are compared with an authored human-gait schematic. The separate breakdown preview contains three provisional in-betweens; five intervals still need corrected art. The user-approved eight-key sequence is now the active left walk. The separate provisional in-between experiment remains incomplete and is not used in the library. Research links, exact prompts, locked key hashes and rejected-drawing notes are included in that folder.
 
 
 ## Continuous breathing
